@@ -1,7 +1,7 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
-import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-cabeceradeinicio')
 export class VistaCabeceradeinicio extends LitElement {
@@ -22,8 +22,8 @@ export class VistaCabeceradeinicio extends LitElement {
    <vaadin-vertical-layout theme="spacing">
     <img style="flex-grow: 0; flex-shrink: 1; height: 100%;" src="https://i1.wp.com/almeria.fape.es/wp-content/uploads/2018/03/logo_Ual_.jpg?resize=351%2C339">
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout theme="spacing" style="width: 100%; height: 100%;">
-    <p style="font-size: 30px; font-weight: bold; width: 100%; height: 50%; flex-grow: 0; flex-shrink: 0; margin-top: 25%; margin-left: var(--lumo-space-m);">SpotyUAL</p>
+   <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; flex-shrink: 0; justify-content: center;">
+    <p style="font-size: 30px; font-weight: bold; width: 100%; height: 100%; flex-grow: 0; flex-shrink: 0; align-self: center;">SpotyUAL</p>
    </vaadin-vertical-layout>
   </vaadin-horizontal-layout>
  </vaadin-horizontal-layout>
@@ -40,12 +40,12 @@ export class VistaCabeceradeinicio extends LitElement {
  </vaadin-horizontal-layout>
 </vaadin-vertical-layout>
 <vaadin-vertical-layout theme="spacing" style="width: 100%; height: 30%; align-items: center; justify-content: center; background-color: #99A3A4;">
- <vaadin-vertical-layout theme="spacing" style="margin-top: var(--lumo-space-xl);">
+ <vaadin-vertical-layout>
   <h1 style="align-self: center;">Escuchar lo es todo</h1>
   <h3 style="align-self: center;">Millones de canciones y pódcasts. No hace falta tarjeta de crédito.</h3>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout theme="spacing">
-  <vaadin-button style="width: 100%; height: 100%; flex-shrink: 0;">
+ <vaadin-vertical-layout>
+  <vaadin-button style="width: 100%; height: 100%; flex-shrink: 1; flex-grow: 0;">
     Registrarse 
   </vaadin-button>
  </vaadin-vertical-layout>

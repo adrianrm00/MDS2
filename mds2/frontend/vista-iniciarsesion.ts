@@ -19,7 +19,7 @@ export class VistaIniciarsesion extends LitElement {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
  <vaadin-button>
-  Volver al Inicio
+   Volver al Inicio 
  </vaadin-button>
  <vaadin-vertical-layout theme="spacing" style="width: 20%; height: 20%; align-self: center;">
   <img style="width: 100%; height: 100%;" src="https://extension.ual.es/assets/logo-ual.png">
@@ -27,32 +27,32 @@ export class VistaIniciarsesion extends LitElement {
  <label style="align-self: center;">Para continuar, inicia sesión.</label>
  <vaadin-vertical-layout theme="spacing" style="align-self: center; flex-direction: row;">
   <vaadin-button style="margin: var(--lumo-space-m);">
-   Google
+    Google 
   </vaadin-button>
   <vaadin-button style="margin: var(--lumo-space-m);">
-   Facebook
+    Facebook 
   </vaadin-button>
   <vaadin-button style="margin: var(--lumo-space-m);">
-   Apple
+    Apple 
   </vaadin-button>
  </vaadin-vertical-layout>
  <label style="align-self: center;">-------------------------o-------------------------</label>
  <vaadin-vertical-layout theme="spacing" style="align-self: center; width: 40%;">
   <vaadin-text-field label="Dirección de correo o Nombre de Usuario:" placeholder="Placeholder" style="align-self: center; width: 100%;"></vaadin-text-field>
   <vaadin-password-field label="Contraseña:" placeholder="Enter password" value="secret1" style="width: 100%;" has-value></vaadin-password-field>
-  <vaadin-vertical-layout theme="spacing" style="flex-direction: row; align-self: center;">
-   <vaadin-button style="margin: var(--lumo-space-m);">
-    Recordar contraseña
+  <vaadin-vertical-layout theme="spacing" style="flex-direction: row; align-self: stretch;">
+   <vaadin-button style="margin: var(--lumo-space-m); flex-grow: 1; flex-shrink: 0;">
+     Recordar contraseña 
    </vaadin-button>
-   <vaadin-button style="margin: var(--lumo-space-m);">
-    Iniciar Sesión
+   <vaadin-button style="margin: var(--lumo-space-m); flex-shrink: 0; flex-grow: 1;">
+     Iniciar Sesión 
    </vaadin-button>
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <label style="align-self: center;">-------------------------o-------------------------</label>
  <label style="align-self: center;">¿No tienes cuenta?</label>
  <vaadin-button style="align-self: center;">
-  Registrate
+   Registrate 
  </vaadin-button>
 </vaadin-vertical-layout>
 `;
