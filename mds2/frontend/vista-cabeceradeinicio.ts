@@ -22,8 +22,8 @@ export class VistaCabeceradeinicio extends LitElement {
    <vaadin-vertical-layout theme="spacing">
     <img style="flex-grow: 0; flex-shrink: 1; height: 100%;" src="https://i1.wp.com/almeria.fape.es/wp-content/uploads/2018/03/logo_Ual_.jpg?resize=351%2C339">
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; flex-shrink: 0; justify-content: center;">
-    <p style="font-size: 30px; font-weight: bold; width: 100%; height: 100%; flex-grow: 0; flex-shrink: 0; align-self: center;">SpotyUAL</p>
+   <vaadin-vertical-layout style="flex-shrink: 0; justify-content: center; align-self: center;">
+    <p style="font-size: 30px; font-weight: bold; height: 100%; flex-grow: 0; flex-shrink: 0; align-self: center; width: 100%;">SpotyUAL</p>
    </vaadin-vertical-layout>
   </vaadin-horizontal-layout>
  </vaadin-horizontal-layout>
