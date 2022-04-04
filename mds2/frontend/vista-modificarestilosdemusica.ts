@@ -1,7 +1,6 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
-import './vista-cabeceraadministrador';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
 
@@ -19,9 +18,7 @@ export class VistaModificarestilosdemusica extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
- <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 10%;">
-  <vista-cabeceraadministrador style="width: 100%; height: 100%;"></vista-cabeceraadministrador>
- </vaadin-horizontal-layout>
+ <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 10%;"></vaadin-horizontal-layout>
  <vaadin-vertical-layout style="width: 100%; align-self: center; height: 10%; margin: var(--lumo-space-xl);">
   <vaadin-vertical-layout style="align-self: center; width: 12%; flex-grow: 0; justify-content: center; height: 100%; background-color: #EAEDED;">
    <label style="align-self: center;">Modificar estilos de música</label>
@@ -34,7 +31,7 @@ export class VistaModificarestilosdemusica extends LitElement {
     <vaadin-horizontal-layout theme="spacing" style="width: 100%; align-items: center; flex-direction: row;">
      <vaadin-text-field placeholder="Estilo1" style="flex-grow: 1;"></vaadin-text-field>
      <vaadin-button>
-      X
+       X 
      </vaadin-button>
     </vaadin-horizontal-layout>
     <vaadin-horizontal-layout theme="spacing" style="width: 100%; align-items: center;">
@@ -92,14 +89,14 @@ export class VistaModificarestilosdemusica extends LitElement {
      </vaadin-button>
     </vaadin-horizontal-layout>
     <vaadin-button style="align-self: center;">
-     +
+      + 
     </vaadin-button>
     <vaadin-horizontal-layout theme="spacing" style="flex-shrink: 0; flex-grow: 0; width: 100%;">
      <vaadin-button style="flex-grow: 0; width: 100%;">
        Cancelar 
      </vaadin-button>
      <vaadin-button style="flex-grow: 0; width: 100%;">
-      Guardar cambios
+       Guardar cambios 
      </vaadin-button>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>

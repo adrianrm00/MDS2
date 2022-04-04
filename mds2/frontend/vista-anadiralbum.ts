@@ -1,9 +1,8 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
-import './vista-cabeceraadministrador';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 import '@vaadin/vaadin-date-picker/src/vaadin-date-picker.js';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
+import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 
 @customElement('vista-anadiralbum')
 export class VistaAnadiralbum extends LitElement {
@@ -19,9 +18,6 @@ export class VistaAnadiralbum extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
- <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 10%;">
-  <vista-cabeceraadministrador style="width: 100%; height: 100%;"></vista-cabeceraadministrador>
- </vaadin-horizontal-layout>
  <vaadin-vertical-layout theme="spacing" style="width: 100%; height: 100%;">
   <vaadin-vertical-layout style="width: 100%; align-self: center; height: 10%; margin: var(--lumo-space-xl);">
    <vaadin-vertical-layout style="align-self: center; width: 10%; flex-grow: 0; justify-content: center; height: 100%; background-color: #EAEDED;">
@@ -50,7 +46,7 @@ export class VistaAnadiralbum extends LitElement {
        </vaadin-horizontal-layout>
       </vaadin-vertical-layout>
       <vaadin-button>
-       +
+        + 
       </vaadin-button>
      </vaadin-vertical-layout>
      <vaadin-password-field label="Contrase�a:" placeholder="Enter password" value="secret1" style="width: 100%;" has-value></vaadin-password-field>
@@ -72,7 +68,7 @@ export class VistaAnadiralbum extends LitElement {
        </vaadin-horizontal-layout>
       </vaadin-vertical-layout>
       <vaadin-button>
-       +
+        + 
       </vaadin-button>
      </vaadin-vertical-layout>
      <vaadin-horizontal-layout theme="spacing" style="width: 100%; flex-grow: 0; flex-shrink: 0; align-items: center;">
@@ -89,7 +85,7 @@ export class VistaAnadiralbum extends LitElement {
         Cancelar 
       </vaadin-button>
       <vaadin-button style="flex-grow: 0; width: 100%;">
-       Confirmar
+        Confirmar 
       </vaadin-button>
      </vaadin-horizontal-layout>
     </vaadin-vertical-layout>

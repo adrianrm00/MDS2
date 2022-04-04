@@ -1,11 +1,10 @@
 import { LitElement, html, css, customElement } from 'lit-element';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
-import './vista-cabeceraadministrador';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
 import '@vaadin/vaadin-text-field/src/vaadin-password-field.js';
 import '@vaadin/vaadin-combo-box/src/vaadin-combo-box.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 
 @customElement('vista-anadirartista')
 export class VistaAnadirartista extends LitElement {
@@ -21,9 +20,6 @@ export class VistaAnadirartista extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
- <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 10%;">
-  <vista-cabeceraadministrador style="width: 100%; height: 100%;"></vista-cabeceraadministrador>
- </vaadin-horizontal-layout>
  <vaadin-vertical-layout theme="spacing" style="width: 100%; height: 100%;">
   <vaadin-vertical-layout style="width: 100%; align-self: center; height: 10%; margin: var(--lumo-space-xl);">
    <vaadin-vertical-layout style="align-self: center; width: 10%; flex-grow: 0; justify-content: center; height: 100%; background-color: #EAEDED;">
@@ -44,18 +40,18 @@ export class VistaAnadirartista extends LitElement {
        <vaadin-horizontal-layout theme="spacing" style="align-self: stretch;">
         <vaadin-combo-box style="flex-grow: 1; flex-shrink: 0;"></vaadin-combo-box>
         <vaadin-button>
-         X
+          X 
         </vaadin-button>
        </vaadin-horizontal-layout>
        <vaadin-horizontal-layout theme="spacing" style="align-self: stretch;">
         <vaadin-combo-box style="flex-grow: 1; flex-shrink: 0;"></vaadin-combo-box>
         <vaadin-button>
-         X
+          X 
         </vaadin-button>
        </vaadin-horizontal-layout>
       </vaadin-vertical-layout>
       <vaadin-button>
-       +
+        + 
       </vaadin-button>
      </vaadin-vertical-layout>
      <vaadin-horizontal-layout theme="spacing" style="width: 100%; flex-grow: 0; flex-shrink: 0; align-items: center;">
@@ -64,15 +60,15 @@ export class VistaAnadirartista extends LitElement {
        <img style="width: 100%; height: 100%;" src="https://extension.ual.es/assets/logo-ual.png">
       </vaadin-vertical-layout>
       <vaadin-button style="width: 100%;">
-       Buscar en archivos
+        Buscar en archivos 
       </vaadin-button>
      </vaadin-horizontal-layout>
      <vaadin-horizontal-layout theme="spacing" style="flex-shrink: 0; flex-grow: 0; width: 100%;">
       <vaadin-button style="flex-grow: 0; width: 100%;">
-       Cancelar
+        Cancelar 
       </vaadin-button>
       <vaadin-button style="flex-grow: 0; width: 100%;">
-       Dar de alta
+        Dar de alta 
       </vaadin-button>
      </vaadin-horizontal-layout>
     </vaadin-vertical-layout>

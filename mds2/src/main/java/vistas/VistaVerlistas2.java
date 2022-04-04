@@ -12,12 +12,12 @@ import com.vaadin.flow.component.littemplate.LitTemplate;
  */
 @Tag("vista-verlistas")
 @JsModule("./vista-verlistas.ts")
-public class VistaVerlistas extends LitTemplate {
+public class VistaVerlistas2 extends LitTemplate {
 
     /**
      * Creates a new VistaVerlistas.
      */
-    public VistaVerlistas() {
+    public VistaVerlistas2() {
         // You can initialise any data required for the connected UI components here.
     }
 

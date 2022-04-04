@@ -1,10 +1,10 @@
 import { LitElement, html, css, customElement } from 'lit-element';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 import './vista-cabeceraadministrador';
-import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
 import '@vaadin/vaadin-combo-box/src/vaadin-combo-box.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
+import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
+import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 
 @customElement('vista-modificarcancionesiniciales')
 export class VistaModificarcancionesiniciales extends LitElement {
@@ -32,12 +32,12 @@ export class VistaModificarcancionesiniciales extends LitElement {
   <vaadin-vertical-layout style="width: 40%; height: 100%; align-self: center; background-color: #EAEDED;">
    <vaadin-vertical-layout style="width: 80%; height: 100%; flex-shrink: 0; flex-grow: 0; align-self: center;" theme="spacing">
     <vaadin-vertical-layout theme="spacing" style="width: 100%; flex-grow: 0; flex-shrink: 0; margin-top: var(--lumo-space-xl); margin-bottom: var(--lumo-space-xl); background-color: #B6BBBE;">
-     <vaadin-text-field placeholder="Seleccione una canción..." style="align-self: center; width: 70%;"></vaadin-text-field>
+     <vaadin-vertical-layout style="height: 100%; width: 100%;"></vaadin-vertical-layout>
      <vaadin-horizontal-layout theme="spacing" style="width: 100%;">
       <label style="flex-grow: 1; flex-shrink: 0;">Seleccionar slot:</label>
       <vaadin-combo-box style="flex-grow: 1; flex-shrink: 0; width: 50%;" placeholder="Canción 1"></vaadin-combo-box>
       <vaadin-button style="flex-grow: 0;">
-       Establecer
+        Establecer 
       </vaadin-button>
      </vaadin-horizontal-layout>
     </vaadin-vertical-layout>
