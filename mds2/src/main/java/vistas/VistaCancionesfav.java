@@ -5,19 +5,19 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.littemplate.LitTemplate;
 
 /**
- * A Designer generated component for the vista-veralbumes template.
+ * A Designer generated component for the vista-cancionesfav template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Tag("vista-veralbumes")
-@JsModule("./vista-veralbumes.ts")
-public class VistaVeralbumes2 extends LitTemplate {
+@Tag("vista-cancionesfav")
+@JsModule("./vista-cancionesfav.ts")
+public class VistaCancionesfav extends LitTemplate {
 
     /**
-     * Creates a new VistaVeralbumes.
+     * Creates a new VistaCancionesfav.
      */
-    public VistaVeralbumes2() {
+    public VistaCancionesfav() {
         // You can initialise any data required for the connected UI components here.
     }
 

@@ -5,19 +5,19 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.littemplate.LitTemplate;
 
 /**
- * A Designer generated component for the vista-verlistas template.
+ * A Designer generated component for the vista-buscadordealbum template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Tag("vista-verlistas")
-@JsModule("./vista-verlistas.ts")
-public class VistaVerlistas2 extends LitTemplate {
+@Tag("vista-buscadordealbum")
+@JsModule("./vista-buscadordealbum.ts")
+public class VistaBuscadordealbum extends LitTemplate {
 
     /**
-     * Creates a new VistaVerlistas.
+     * Creates a new VistaBuscadordealbum.
      */
-    public VistaVerlistas2() {
+    public VistaBuscadordealbum() {
         // You can initialise any data required for the connected UI components here.
     }
 

@@ -5,19 +5,19 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.littemplate.LitTemplate;
 
 /**
- * A Designer generated component for the vista-cabecerausuarioregistrado template.
+ * A Designer generated component for the vista-buscadordeartista template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Tag("vista-cabecerausuarioregistrado")
-@JsModule("./vista-cabecerausuarioregistrado.ts")
-public class VistaCabecerausuarioregistrado extends LitTemplate {
+@Tag("vista-buscadordeartista")
+@JsModule("./vista-buscadordeartista.ts")
+public class VistaBuscadordeartista extends LitTemplate {
 
     /**
-     * Creates a new VistaCabecerausuarioregistrado.
+     * Creates a new VistaBuscadordeartista.
      */
-    public VistaCabecerausuarioregistrado() {
+    public VistaBuscadordeartista() {
         // You can initialise any data required for the connected UI components here.
     }
 
