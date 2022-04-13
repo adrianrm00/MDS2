@@ -21,7 +21,7 @@ export class VistaAnadircancionalista extends LitElement {
    <img style="width: 100%; height: 100%; align-self: center;" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_UAL_Transparente.png">
   </vaadin-vertical-layout>
   <vaadin-vertical-layout style="width: 100%; height: 100%; padding-left: var(--lumo-space-m); align-items: center; justify-content: center;">
-   <vaadin-horizontal-layout theme="" style="align-items: center; width: 100%; justify-content: center; height: 100%; align-self: center;">
+   <vaadin-horizontal-layout theme="" style="width: 100%; height: 100%; align-self: center; justify-content: center; align-items: center;">
     <label style="font-size: 18px; font-weight: bold; align-self: center; height: 100%; width: 100%;">Nombre de la canción</label>
    </vaadin-horizontal-layout>
    <vaadin-horizontal-layout theme="" style="width: 100%; height: 100%;">
