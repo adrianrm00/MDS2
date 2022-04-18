@@ -5,19 +5,19 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.littemplate.LitTemplate;
 
 /**
- * A Designer generated component for the vista-anadircanciondesdeanadiralbum template.
+ * A Designer generated component for the vista-anadirartistaaalbum template.
  *
  * Designer will add and remove fields with @Id mappings but
  * does not overwrite or otherwise change this file.
  */
-@Tag("vista-anadircanciondesdeanadiralbum")
-@JsModule("./vista-anadircanciondesdeanadiralbum.ts")
-public class VistaAnadircanciondesdeanadiralbum extends LitTemplate {
+@Tag("vista-anadirartistaaalbum")
+@JsModule("./vista-anadirartistaaalbum.ts")
+public class VistaAnadirartistaaalbum extends LitTemplate {
 
     /**
-     * Creates a new VistaAnadircanciondesdeanadiralbum.
+     * Creates a new VistaAnadirartistaaalbum.
      */
-    public VistaAnadircanciondesdeanadiralbum() {
+    public VistaAnadirartistaaalbum() {
         // You can initialise any data required for the connected UI components here.
     }
 

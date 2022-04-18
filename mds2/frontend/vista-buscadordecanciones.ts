@@ -1,6 +1,7 @@
+import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
-import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-buscadordecanciones')
 export class VistaBuscadordecanciones extends LitElement {

@@ -23,6 +23,7 @@ export class VistaAnadircancion extends LitElement {
   </vaadin-vertical-layout>
   <vaadin-vertical-layout style="width: 40%; height: 100%; align-self: center; background-color: #EAEDED;">
    <vaadin-vertical-layout style="align-self: center; width: 80%; height: 100%;" theme="spacing-l">
+    <vaadin-vertical-layout style="width: 100%;"></vaadin-vertical-layout>
     <vaadin-text-field label="T�tulo:" placeholder="Placeholder" style="width: 100%;"></vaadin-text-field>
     <vaadin-vertical-layout theme="spacing" style="flex-direction: row; width: 100%;">
      <label style="margin-right: var(--lumo-space-xl); flex-grow: 1; flex-shrink: 0; width: 16%;">Intérprete:</label>
@@ -116,7 +117,7 @@ export class VistaAnadircancion extends LitElement {
        Cancelar 
      </vaadin-button>
      <vaadin-button style="flex-grow: 0; width: 100%;">
-      Añádir
+       Añádir 
      </vaadin-button>
     </vaadin-horizontal-layout>
    </vaadin-vertical-layout>

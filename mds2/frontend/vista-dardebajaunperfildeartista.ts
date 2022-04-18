@@ -1,7 +1,6 @@
 import { LitElement, html, css, customElement } from 'lit-element';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
-import './vista-cabeceraadministrador';
+import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
 
 @customElement('vista-dardebajaunperfildeartista')
 export class VistaDardebajaunperfildeartista extends LitElement {
@@ -17,9 +16,6 @@ export class VistaDardebajaunperfildeartista extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
- <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 10%;">
-  <vista-cabeceraadministrador style="width: 100%; height: 100%;"></vista-cabeceraadministrador>
- </vaadin-horizontal-layout>
  <vaadin-vertical-layout style="width: 100%; align-self: center; height: 10%; margin: var(--lumo-space-xl);">
   <vaadin-vertical-layout style="align-self: center; width: 12%; flex-grow: 0; justify-content: center; height: 100%; background-color: #EAEDED;">
    <label style="align-self: center;">Dar de baja un perfil de artista</label>
@@ -28,7 +24,7 @@ export class VistaDardebajaunperfildeartista extends LitElement {
  <vaadin-vertical-layout style="height: 100%; width: 100%;">
   <vaadin-vertical-layout style="width: 40%; height: 100%; align-self: center; background-color: #EAEDED;">
    <vaadin-vertical-layout style="width: 80%; height: 100%; flex-shrink: 0; flex-grow: 0; align-self: center;" theme="spacing">
-    <vaadin-text-field placeholder="Seleccione el perfil de artista que va a dar de baja" style="align-self: center; width: 70%; margin-bottom: var(--lumo-space-m); margin-top: var(--lumo-space-xl);"></vaadin-text-field>
+    <vaadin-vertical-layout style="width: 60%; align-self: center;"></vaadin-vertical-layout>
     <vaadin-text-field label="Nombre artista:" placeholder="xxxxxxxxxxxx" style="width: 100%;"></vaadin-text-field>
     <vaadin-text-field label="Nombre completo:" placeholder="xxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxx" style="width: 100%;"></vaadin-text-field>
     <vaadin-text-field label="Correo electrónico:" placeholder="xxxxxxxxxxxx@xxxxxxxx.xxx" style="width: 100%;"></vaadin-text-field>

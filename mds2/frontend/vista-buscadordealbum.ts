@@ -1,5 +1,7 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-buscadordealbum')
 export class VistaBuscadordealbum extends LitElement {
@@ -14,15 +16,11 @@ export class VistaBuscadordealbum extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row; align-items: center;">
- <vaadin-vertical-layout style="width: 100%;">
-  <vaadin-text-field placeholder="Buscador de album" style="width: 100%;"></vaadin-text-field>
- </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; justify-content: center;">
-  <vaadin-button>
-    Buscar 
-  </vaadin-button>
- </vaadin-vertical-layout>
+<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row; align-items: center;">
+ <vaadin-text-field placeholder="Seleccione el album que desea buscar" style="width: 90%;"></vaadin-text-field>
+ <vaadin-button style="width: 10%;">
+  <img style="width: 40%; height: 100%;" src="https://w7.pngwing.com/pngs/545/756/png-transparent-computer-icons-magnifying-glass-magnifying-glass-glass-logo-desktop-wallpaper.png">
+ </vaadin-button>
 </vaadin-vertical-layout>
 `;
   }

@@ -27,6 +27,7 @@ export class VistaAnadiralbum extends LitElement {
   <vaadin-vertical-layout style="height: 100%; align-self: center; width: 100%;">
    <vaadin-vertical-layout style="width: 40%; height: 100%; align-self: center; background-color: #EAEDED;">
     <vaadin-vertical-layout style="align-self: center; width: 80%; height: 100%;" theme="spacing">
+     <vaadin-vertical-layout style="width: 100%;"></vaadin-vertical-layout>
      <vaadin-text-field label="Nombre álbum:" placeholder="Placeholder" style="width: 100%;"></vaadin-text-field>
      <vaadin-date-picker label="Fecha de lanzamiento:" placeholder="Pick a date" style="width: 100%;"></vaadin-date-picker>
      <vaadin-vertical-layout theme="spacing" style="flex-direction: row; width: 100%;">
@@ -45,9 +46,7 @@ export class VistaAnadiralbum extends LitElement {
         </vaadin-button>
        </vaadin-horizontal-layout>
       </vaadin-vertical-layout>
-      <vaadin-button>
-        + 
-      </vaadin-button>
+      <vaadin-vertical-layout></vaadin-vertical-layout>
      </vaadin-vertical-layout>
      <vaadin-password-field label="Contrase�a:" placeholder="Enter password" value="secret1" style="width: 100%;" has-value></vaadin-password-field>
      <vaadin-password-field label="Repetir contrase�a:" placeholder="Enter password" value="secret1" style="width: 100%;" has-value></vaadin-password-field>
@@ -67,10 +66,9 @@ export class VistaAnadiralbum extends LitElement {
         </vaadin-button>
        </vaadin-horizontal-layout>
       </vaadin-vertical-layout>
-      <vaadin-button>
-        + 
-      </vaadin-button>
+      <vaadin-vertical-layout></vaadin-vertical-layout>
      </vaadin-vertical-layout>
+     <vaadin-vertical-layout style="width: 100%;"></vaadin-vertical-layout>
      <vaadin-horizontal-layout theme="spacing" style="width: 100%; flex-grow: 0; flex-shrink: 0; align-items: center;">
       <label style="width: 100%;">Foto del álbum:</label>
       <vaadin-vertical-layout theme="spacing" style="height: 100%; width: 100%;">
