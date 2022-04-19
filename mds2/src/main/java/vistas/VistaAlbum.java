@@ -23,6 +23,7 @@ public class VistaAlbum extends LitTemplate {
 	private Element container_principal;
 	@Id("container_delimitador")
 	private Element container_delimitador;
+	
 	public Element getContainer_principal() {
 		return container_principal;
 	}

@@ -14,11 +14,11 @@ export class VistaVerlistas extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; align-items: center; flex-direction: row;">
- <vaadin-vertical-layout style="width: 200%; margin-left: var(--lumo-space-xl);">
-  <label style="width: 100%; font-size: 32px; font-weight:bold;">Listas</label>
+<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; align-items: center; flex-direction: row;" id="container_principal">
+ <vaadin-vertical-layout style="width: 200%; margin-left: var(--lumo-space-xl);" id="container_titulo">
+  <label style="width: 100%; font-size: 32px; font-weight:bold;" id="titulo">Listas</label>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%;"></vaadin-vertical-layout>
+ <vaadin-vertical-layout style="width: 100%;" id="container_buscador"></vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
   }

@@ -15,12 +15,12 @@ export class VistaOpcionesusuario extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row;">
- <vaadin-vertical-layout style="width: 30%; height: 100%;">
-  <img style="width: 100%; height: 100%;" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png">
+<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row;" id="container_principal">
+ <vaadin-vertical-layout style="width: 30%; height: 100%;" id="container_imagen">
+  <img style="width: 100%; height: 100%;" src="http://assets.stickpng.com/images/585e4beacb11b227491c3399.png" id="img">
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row; align-items: center; align-self: center;">
-  <vaadin-combo-box style="width: 100%; align-self: center;"></vaadin-combo-box>
+ <vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row; align-items: center; align-self: center;" id="container_opciones">
+  <vaadin-combo-box style="width: 100%; align-self: center;" id="combo_box_opciones"></vaadin-combo-box>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;

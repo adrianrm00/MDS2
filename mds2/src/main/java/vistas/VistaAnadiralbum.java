@@ -23,7 +23,78 @@ import com.vaadin.flow.component.html.Image;
 @JsModule("./vista-anadiralbum.ts")
 public class VistaAnadiralbum extends LitTemplate {
 
-    public Element getContainer_principal_1() {
+	@Id("container_principal_1")
+	private Element container_principal_1;
+	@Id("container_principal_2")
+	private Element container_principal_2;
+	@Id("container_titulo")
+	private Element container_titulo;
+	@Id("container_anadir_album")
+	private Element container_anadir_album;
+	@Id("label_anadir_album")
+	private Label label_anadir_album;
+	@Id("container_contenido")
+	private Element container_contenido;
+	@Id("container_contenido_fondo")
+	private Element container_contenido_fondo;
+	@Id("container_contenido_fondo_ajustado")
+	private Element container_contenido_fondo_ajustado;
+	@Id("buscador_album")
+	private Element buscador_album;
+	@Id("tf_nombre_album")
+	private TextField tf_nombre_album;
+	@Id("dp_fecha_lanzamiento")
+	private DatePicker dp_fecha_lanzamiento;
+	@Id("container_artista_asociado")
+	private Element container_artista_asociado;
+	@Id("label_artista_asociado")
+	private Label label_artista_asociado;
+	@Id("container_tf_artista_asociado")
+	private HorizontalLayout container_tf_artista_asociado;
+	@Id("tf_artista_asociado")
+	private TextField tf_artista_asociado;
+	@Id("boton_eliminar_artista_asociado")
+	private Button boton_eliminar_artista_asociado;
+	@Id("container_anadir_artista_asociado")
+	private Element container_anadir_artista_asociado;
+	@Id("pf_escribir_contrasena")
+	private PasswordField pf_escribir_contrasena;
+	@Id("pf_repetir_contrasena")
+	private PasswordField pf_repetir_contrasena;
+	@Id("container_anadir_cancion")
+	private Element container_anadir_cancion;
+	@Id("label_anadir_cancion")
+	private Label label_anadir_cancion;
+	@Id("container_tf_anadir_canciones")
+	private Element container_tf_anadir_canciones;
+	@Id("container_tf_anadir_cancion")
+	private HorizontalLayout container_tf_anadir_cancion;
+	@Id("tf_anadir_cancion")
+	private TextField tf_anadir_cancion;
+	@Id("boton_eliminar_cancion")
+	private Button boton_eliminar_cancion;
+	@Id("container_boton_anadir_cancion")
+	private Element container_boton_anadir_cancion;
+	@Id("container_anadir_cancion_a_album")
+	private Element container_anadir_cancion_a_album;
+	@Id("container_foto_album")
+	private HorizontalLayout container_foto_album;
+	@Id("label_foto_album")
+	private Label label_foto_album;
+	@Id("container_img_album")
+	private Element container_img_album;
+	@Id("img_album")
+	private Image img_album;
+	@Id("boton_buscar_en_archivos")
+	private Button boton_buscar_en_archivos;
+	@Id("container_botones_finales")
+	private HorizontalLayout container_botones_finales;
+	@Id("boton_cancelar")
+	private Button boton_cancelar;
+	@Id("boton_confirmar")
+	private Button boton_confirmar;
+	
+	public Element getContainer_principal_1() {
 		return container_principal_1;
 	}
 
@@ -302,77 +373,6 @@ public class VistaAnadiralbum extends LitTemplate {
 	public void setBoton_confirmar(Button boton_confirmar) {
 		this.boton_confirmar = boton_confirmar;
 	}
-
-	@Id("container_principal_1")
-	private Element container_principal_1;
-	@Id("container_principal_2")
-	private Element container_principal_2;
-	@Id("container_titulo")
-	private Element container_titulo;
-	@Id("container_anadir_album")
-	private Element container_anadir_album;
-	@Id("label_anadir_album")
-	private Label label_anadir_album;
-	@Id("container_contenido")
-	private Element container_contenido;
-	@Id("container_contenido_fondo")
-	private Element container_contenido_fondo;
-	@Id("container_contenido_fondo_ajustado")
-	private Element container_contenido_fondo_ajustado;
-	@Id("buscador_album")
-	private Element buscador_album;
-	@Id("tf_nombre_album")
-	private TextField tf_nombre_album;
-	@Id("dp_fecha_lanzamiento")
-	private DatePicker dp_fecha_lanzamiento;
-	@Id("container_artista_asociado")
-	private Element container_artista_asociado;
-	@Id("label_artista_asociado")
-	private Label label_artista_asociado;
-	@Id("container_tf_artista_asociado")
-	private HorizontalLayout container_tf_artista_asociado;
-	@Id("tf_artista_asociado")
-	private TextField tf_artista_asociado;
-	@Id("boton_eliminar_artista_asociado")
-	private Button boton_eliminar_artista_asociado;
-	@Id("container_anadir_artista_asociado")
-	private Element container_anadir_artista_asociado;
-	@Id("pf_escribir_contrasena")
-	private PasswordField pf_escribir_contrasena;
-	@Id("pf_repetir_contrasena")
-	private PasswordField pf_repetir_contrasena;
-	@Id("container_anadir_cancion")
-	private Element container_anadir_cancion;
-	@Id("label_anadir_cancion")
-	private Label label_anadir_cancion;
-	@Id("container_tf_anadir_canciones")
-	private Element container_tf_anadir_canciones;
-	@Id("container_tf_anadir_cancion")
-	private HorizontalLayout container_tf_anadir_cancion;
-	@Id("tf_anadir_cancion")
-	private TextField tf_anadir_cancion;
-	@Id("boton_eliminar_cancion")
-	private Button boton_eliminar_cancion;
-	@Id("container_boton_anadir_cancion")
-	private Element container_boton_anadir_cancion;
-	@Id("container_anadir_cancion_a_album")
-	private Element container_anadir_cancion_a_album;
-	@Id("container_foto_album")
-	private HorizontalLayout container_foto_album;
-	@Id("label_foto_album")
-	private Label label_foto_album;
-	@Id("container_img_album")
-	private Element container_img_album;
-	@Id("img_album")
-	private Image img_album;
-	@Id("boton_buscar_en_archivos")
-	private Button boton_buscar_en_archivos;
-	@Id("container_botones_finales")
-	private HorizontalLayout container_botones_finales;
-	@Id("boton_cancelar")
-	private Button boton_cancelar;
-	@Id("boton_confirmar")
-	private Button boton_confirmar;
 
 	/**
      * Creates a new VistaAnadiralbum.

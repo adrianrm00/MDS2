@@ -15,25 +15,25 @@ export class VistaLista extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;">
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);">
-  <vaadin-button style="width: 100%;">
-   Editar
+<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;" id="container_principal">
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);" id="container_editar">
+  <vaadin-button style="width: 100%;" id="boton_editar">
+    Editar 
   </vaadin-button>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);">
-  <vaadin-button style="width: 100%;">
-   Eliminar
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);" id="container_eliminar">
+  <vaadin-button style="width: 100%;" id="boton_eliminar">
+    Eliminar 
   </vaadin-button>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);">
-  <vaadin-button style="width: 100%;">
-   Compartir
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);" id="container_compartir">
+  <vaadin-button style="width: 100%;" id="boton_compartir">
+    Compartir 
   </vaadin-button>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);">
-  <vaadin-button style="width: 100%;">
-   Reproducir
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; margin-right: var(--lumo-space-s); margin-left: var(--lumo-space-s);" id="container_reproducir">
+  <vaadin-button style="width: 100%;" id="boton_reproducir">
+    Reproducir 
   </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>

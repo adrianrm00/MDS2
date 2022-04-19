@@ -15,20 +15,20 @@ export class VistaTubiblioteca extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;">
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);">
-  <vaadin-button style="align-self: center; width: 100%;">
-   Listas
+<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;" id="container_principal">
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);" id="container_listas">
+  <vaadin-button style="align-self: center; width: 100%;" id="boton listas">
+    Listas 
   </vaadin-button>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);">
-  <vaadin-button style="align-self: center; width: 100%;">
-   Artistas
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);" id="container_artistas">
+  <vaadin-button style="align-self: center; width: 100%;" id="boton_artistas">
+    Artistas 
   </vaadin-button>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);">
-  <vaadin-button style="align-self: center; width: 100%;">
-   Albumes
+ <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; align-items: center; justify-content: center; padding: var(--lumo-space-m);" id="container_albumes">
+  <vaadin-button style="align-self: center; width: 100%;" id="boton_albumes">
+    Albumes 
   </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>

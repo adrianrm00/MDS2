@@ -3,6 +3,9 @@ package vistas;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.littemplate.LitTemplate;
+import com.vaadin.flow.dom.Element;
+import com.vaadin.flow.component.template.Id;
+import com.vaadin.flow.component.html.Label;
 
 /**
  * A Designer generated component for the vista-verlistas template.
@@ -14,7 +17,48 @@ import com.vaadin.flow.component.littemplate.LitTemplate;
 @JsModule("./vista-verlistas.ts")
 public class VistaVerlistas extends LitTemplate {
 
-    /**
+    @Id("container_principal")
+	private Element container_principal;
+	@Id("container_titulo")
+	private Element container_titulo;
+	@Id("titulo")
+	private Label titulo;
+	@Id("container_buscador")
+	private Element container_buscador;
+
+	public Element getContainer_principal() {
+		return container_principal;
+	}
+
+	public void setContainer_principal(Element container_principal) {
+		this.container_principal = container_principal;
+	}
+
+	public Element getContainer_titulo() {
+		return container_titulo;
+	}
+
+	public void setContainer_titulo(Element container_titulo) {
+		this.container_titulo = container_titulo;
+	}
+
+	public Label getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(Label titulo) {
+		this.titulo = titulo;
+	}
+
+	public Element getContainer_buscador() {
+		return container_buscador;
+	}
+
+	public void setContainer_buscador(Element container_buscador) {
+		this.container_buscador = container_buscador;
+	}
+
+	/**
      * Creates a new VistaVerlistas.
      */
     public VistaVerlistas() {

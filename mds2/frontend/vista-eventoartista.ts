@@ -15,25 +15,25 @@ export class VistaEventoartista extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;">
- <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;">
-  <label style="width: 100%;">Nombre del concierto </label>
+<vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;" id="container_principal">
+ <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;" id="comtainer_nombre_concierto">
+  <label style="width: 100%;" id="texto_nombre_concierto">Nombre del concierto </label>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;">
-  <label style="width: 100%;">Ciudad</label>
+ <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;" id="comtainer_ciudad">
+  <label style="width: 100%;" id="texto_ciudad">Ciudad</label>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;">
-  <label style="width: 100%;">Fecha del evento</label>
+ <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center;" id="comtainer_fecha_evento">
+  <label style="width: 100%;" id="texto_fecha_evento">Fecha del evento</label>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;">
-  <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center; align-items: center;">
-   <vaadin-button>
-    Editar
+ <vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row;" id="comtainer_botones">
+  <vaadin-vertical-layout style="width: 100%; height: 100%; justify-content: center; align-items: center;" id="comtainer_boton_editar">
+   <vaadin-button id="boton_editar">
+     Editar 
    </vaadin-button>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;">
-   <vaadin-button>
-    Borrar
+  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="comtainer_boton_borrar">
+   <vaadin-button id="boton_borrar">
+     Borrar 
    </vaadin-button>
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
