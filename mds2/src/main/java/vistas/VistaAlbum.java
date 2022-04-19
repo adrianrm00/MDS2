@@ -23,7 +23,25 @@ public class VistaAlbum extends LitTemplate {
 	private Element container_principal;
 	@Id("container_delimitador")
 	private Element container_delimitador;
-	
+	@Id("contaniner_img")
+	private Element contaniner_img;
+	@Id("img")
+	private Image img;
+	@Id("container_informacion")
+	private Element container_informacion;
+	@Id("container_informacion_ajustada")
+	private Element container_informacion_ajustada;
+	@Id("tf_nombre_album")
+	private TextField tf_nombre_album;
+	@Id("tf_fecha_edicion")
+	private TextField tf_fecha_edicion;
+	@Id("container_boton")
+	private Element container_boton;
+	@Id("boton")
+	private Button boton;
+	@Id("container_canciones")
+	private Element container_canciones;
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}
@@ -111,26 +129,7 @@ public class VistaAlbum extends LitTemplate {
 	public void setContainer_canciones(Element container_canciones) {
 		this.container_canciones = container_canciones;
 	}
-
-	@Id("contaniner_img")
-	private Element contaniner_img;
-	@Id("img")
-	private Image img;
-	@Id("container_informacion")
-	private Element container_informacion;
-	@Id("container_informacion_ajustada")
-	private Element container_informacion_ajustada;
-	@Id("tf_nombre_album")
-	private TextField tf_nombre_album;
-	@Id("tf_fecha_edicion")
-	private TextField tf_fecha_edicion;
-	@Id("container_boton")
-	private Element container_boton;
-	@Id("boton")
-	private Button boton;
-	@Id("container_canciones")
-	private Element container_canciones;
-
+	
 	/**
      * Creates a new VistaAlbum.
      */

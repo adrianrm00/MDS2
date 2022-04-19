@@ -15,9 +15,9 @@ export class VistaAnadiramislistas extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; align-items: center; justify-content: center;">
- <vaadin-button style="width: 100%;">
-  Añadir a mis listas
+<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="container_principal">
+ <vaadin-button style="width: 100%;" id="boton_anadir_a_mis_listas">
+   Añadir a mis listas 
  </vaadin-button>
 </vaadin-vertical-layout>
 `;

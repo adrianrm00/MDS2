@@ -15,9 +15,9 @@ export class VistaAnadirartistaaalbum extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout style="width: 100%; height: 100%;">
- <vaadin-button style="width: 100%; height: 100%;">
-  +
+<vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_principal">
+ <vaadin-button style="width: 100%; height: 100%;" id="boton_anadir_artista_a_album">
+   + 
  </vaadin-button>
 </vaadin-vertical-layout>
 `;
