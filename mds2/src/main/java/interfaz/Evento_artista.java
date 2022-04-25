@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Evento_artista {
+public class Evento_artista extends vistas.VistaEventoartista {
 	private event _borrar;
 	private Button _editarB;
 	public Eventos_del_artista _eventos_del_artista;

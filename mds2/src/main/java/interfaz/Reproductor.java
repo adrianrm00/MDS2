@@ -1,7 +1,7 @@
 package interfaz;
 
 public class Reproductor extends Reproductor_simple {
-	private event _añadir_a_fav;
+	private event _anadir_a_fav;
 	private event _barra_tiempo;
 	private event _volumen;
 	private event _bucle;
@@ -11,7 +11,7 @@ public class Reproductor extends Reproductor_simple {
 	private event _pasar_cancion;
 	public UsuarioRegistrado _usuarioRegistrado;
 
-	public void Añadir_a_fav() {
+	public void Anadir_a_fav() {
 		throw new UnsupportedOperationException();
 	}
 

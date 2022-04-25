@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Dar_de_baja_un_perfil_de_artista {
+public class Dar_de_baja_un_perfil_de_artista extends vistas.VistaDardebajaunperfildeartista {
 	private Label _nombreArtistaL;
 	private Label _nombreCompletoL;
 	private Label _emailL;

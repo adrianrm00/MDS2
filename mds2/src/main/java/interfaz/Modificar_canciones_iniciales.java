@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Modificar_canciones_iniciales {
+public class Modificar_canciones_iniciales extends vistas.VistaModificarcancionesiniciales {
 	private TextField _buscadorCancionTF;
 	private Label _seleccionSlotL;
 	private ComboBox _cancionCB;

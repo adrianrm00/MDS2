@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Crear_lista {
+public class Crear_lista extends vistas.VistaCrearunalista {
 	private Image _imagenListaI;
 	private Label _nombreListaL;
 	private TextField _nombreListaTF;
@@ -9,7 +9,7 @@ public class Crear_lista {
 	private Label _textoL;
 	public Menu_lateral _menu_lateral;
 	public Mis_listas _mis_listas;
-	public Añadir_cancion_a_lista _añadir_cancion_a_lista;
+	public Anadir_cancion_a_lista _anadir_cancion_a_lista;
 	public Buscador_de_canciones _buscador_de_canciones;
 	public Canciones _canciones;
 }

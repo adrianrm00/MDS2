@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Menu_lateral {
+public class Menu_lateral extends vistas.VistaMenulateral {
 	private event _inicio;
 	private Button _buscarB;
 	private Button _tuBibliotecaB;

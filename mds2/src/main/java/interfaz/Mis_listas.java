@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Mis_listas {
+public class Mis_listas extends vistas.VistaMislistas {
 	private Image _fotoListaI;
 	private Label _nombreListaL;
 	private Label _creadaPorL;

@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Tu_biblioteca {
+public class Tu_biblioteca extends vistas.VistaTubiblioteca {
 	private Button _listasB;
 	private Button _artistasB;
 	private Button _albumesB;

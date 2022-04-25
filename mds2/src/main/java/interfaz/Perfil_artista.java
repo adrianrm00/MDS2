@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Perfil_artista {
+public class Perfil_artista extends vistas.VistaPerfilartista {
 	private event _seguir;
 	private Image _fotoPerfilArtistaI;
 	private Label _nombreArtistaL;

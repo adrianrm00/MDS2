@@ -1,7 +1,7 @@
 package interfaz;
 
-public class Añadir_eventos {
-	private Label _añadirEventoL;
+public class Anadir_eventos extends vistas.VistaAnadirevento {
+	private Label _anadirEventoL;
 	private Label _nombreConciertoL;
 	private TextField _nombreConciertoTF;
 	private Label _ciudadL;

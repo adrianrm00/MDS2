@@ -1,8 +1,8 @@
 package interfaz;
 
 public class Editar_eventos {
-	private Button _añadirEventoB;
+	private Button _anadirEventoB;
 	public Vista_artista _vista_artista;
 	public Eventos_del_artista _eventos_del_artista;
-	public Añadir_eventos _añadir_eventos;
+	public Anadir_eventos _anadir_eventos;
 }

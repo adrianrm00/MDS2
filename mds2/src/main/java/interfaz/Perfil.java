@@ -2,7 +2,7 @@ package interfaz;
 
 import Diagrama_de_clases.Estadisticas;
 
-public class Perfil {
+public class Perfil extends vistas.VistaPerfil {
 	private Image _fotoPerfilI;
 	private Label _nombreUsuarioL;
 	private Label _estilosL;

@@ -4,7 +4,7 @@ import Diagrama_de_clases.Google;
 import Diagrama_de_clases.Facebook;
 import Diagrama_de_clases.Apple;
 
-public class Registrarse {
+public class Registrarse extends vistas.VistaRegistrarse {
 	private event _subir_foto;
 	private event _registro_de_terceros;
 	private Image _logoI;
@@ -16,8 +16,8 @@ public class Registrarse {
 	private TextField _nombreUsuarioTF;
 	private Label _correoElectronicoL;
 	private TextField _correoElectronicoTF;
-	private Label _contraseñaL;
-	private TextField _contraseñaTF;
+	private Label _contrasenaL;
+	private TextField _contrasenaTF;
 	private Label _fotoPerfilL;
 	private Label _nombreArchivoL;
 	private Button _subirB;

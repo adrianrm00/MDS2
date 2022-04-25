@@ -1,14 +1,14 @@
 package interfaz;
 
-public class Cambiar_contraseña {
+public class Cambiar_contrasena {
 	private Label _textoL;
-	private Label _nuevaContraseñaL;
-	private TextField _nuevaContraseñaTF;
-	private Label _repetirContraseñaL;
-	private TextField _repetirContraseñaTF;
+	private Label _nuevaContrasenaL;
+	private TextField _nuevaContrasenaTF;
+	private Label _repetirContrasenaL;
+	private TextField _repetirContrasenaTF;
 	public Cuenta _cuenta;
 
-	public void Validar_contraseña() {
+	public void Validar_contrasena() {
 		throw new UnsupportedOperationException();
 	}
 }

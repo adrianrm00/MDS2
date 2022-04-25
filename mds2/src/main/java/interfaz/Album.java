@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Album {
+public class Album extends vistas.VistaAlbum {
 	private event _reproducir_album;
 	private event _nombre_artista;
 	private Image _imagenAlbumI;

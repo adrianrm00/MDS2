@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Lista {
+public class Lista extends vistas.VistaLista {
 	private event _compartir_lista;
 	private event _eliminar_lista;
 	private event _reproducir_lista;

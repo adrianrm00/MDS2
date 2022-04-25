@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Cabecera {
+public class Cabecera extends vistas.VistaCabecera {
 	private Image _fotoPerfilI;
 	private Label _nombreUsuarioL;
 	private Button _flechaB;

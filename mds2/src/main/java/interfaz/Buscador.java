@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Buscador {
+public class Buscador extends vistas.VistaBuscador {
 	private TextField _buscadorTF;
 	private Button _buscadorB;
 	public Buscar _buscar;

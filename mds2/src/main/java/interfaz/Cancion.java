@@ -1,15 +1,15 @@
 package interfaz;
 
-public class Cancion {
-	private event _añadir_a_fav;
+public class Cancion extends vistas.VistaCancion {
+	private event _anadir_a_fav;
 	private event _eliminar_de_fav;
 	private event _reproducir;
 	private event _creditos;
 	private event _ir_a_artista;
-	private event _añadir_a_lista;
+	private event _anadir_a_lista;
 	public Canciones _canciones;
 
-	public void Añadir_a_fav() {
+	public void Anadir_a_fav() {
 		throw new UnsupportedOperationException();
 	}
 
@@ -29,7 +29,7 @@ public class Cancion {
 		throw new UnsupportedOperationException();
 	}
 
-	public void Añadir_a_lista() {
+	public void Anadir_a_lista() {
 		throw new UnsupportedOperationException();
 	}
 }

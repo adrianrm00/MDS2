@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Dar_de_baja_un_perfil {
+public class Dar_de_baja_un_perfil extends vistas.VistaDardebajaunperfil {
 	private Label _nombreL;
 	private Label _nombrePerfilL;
 	private Label _emailL;

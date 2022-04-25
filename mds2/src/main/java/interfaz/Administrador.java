@@ -2,12 +2,12 @@ package interfaz;
 
 import basededatos.iAdministrador;
 
-public class Administrador {
-	private Button _añadirArtistaB;
+public class Administrador extends vistas.VistaPantalladeinicioadministrador {
+	private Button _anadirArtistaB;
 	private Button _modificarArtistaB;
-	private Button _añadirAlbumB;
+	private Button _anadirAlbumB;
 	private Button _modificarAlbumB;
-	private Button _añadirCancionB;
+	private Button _anadirCancionB;
 	private Button _modificarCancionB;
 	private Button _modificarEstilosMusicaB;
 	private Button _modificarCancionesInicialesB;
@@ -15,11 +15,11 @@ public class Administrador {
 	private Button _darBajaPerfilArtistaB;
 	private Button _cerrarSesionB;
 	public iAdministrador _iAdministrador;
-	public Añadir_artista _añadir_artista;
+	public Anadir_artista _anadir_artista;
 	public Modificar_artista _modificar_artista;
-	public Añadir_album _añadir_album;
+	public Anadir_album _anadir_album;
 	public Modificar_album _modificar_album;
-	public Añadir_cancion _añadir_cancion;
+	public Anadir_cancion _anadir_cancion;
 	public Modificar_cancion _modificar_cancion;
 	public Modificar_estilos_de_musica _modificar_estilos_de_musica;
 	public Dar_de_baja_un_perfil _dar_de_baja_un_perfil;

@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Cabecera_de_inicio {
+public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 	private Button _asistenciaB;
 	private Button _registrarseB;
 	private Button _iniciarSesionB;

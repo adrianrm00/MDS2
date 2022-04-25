@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Opciones_Usuario {
+public class Opciones_Usuario extends vistas.VistaOpcionesusuario {
 	private Button _cuentaB;
 	private Button _perfilB;
 	private Button _notificacionesB;
