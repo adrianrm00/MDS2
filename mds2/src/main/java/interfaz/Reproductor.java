@@ -1,14 +1,7 @@
 package interfaz;
 
 public class Reproductor extends Reproductor_simple {
-	private event _anadir_a_fav;
-	private event _barra_tiempo;
-	private event _volumen;
-	private event _bucle;
-	private event _0seg_menos;
-	private event _0seg_mas;
-	private event _retroceder_cancion;
-	private event _pasar_cancion;
+	
 	public UsuarioRegistrado _usuarioRegistrado;
 
 	public void Anadir_a_fav() {

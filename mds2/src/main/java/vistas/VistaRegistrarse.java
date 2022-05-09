@@ -24,6 +24,8 @@ public class VistaRegistrarse extends LitTemplate {
 
     @Id("container_principal")
 	private Element container_principal;
+    @Id("boton_cancelar")
+	private Button boton_cancelar;
 	@Id("container_imagen")
 	private Element container_imagen;
 	@Id("img")
@@ -80,6 +82,7 @@ public class VistaRegistrarse extends LitTemplate {
 	private Button boton_facebook;
 	@Id("boton_apple")
 	private Button boton_apple;
+	
 
 	
 	public Element getContainer_principal() {
