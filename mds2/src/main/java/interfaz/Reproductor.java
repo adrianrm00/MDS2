@@ -2,7 +2,7 @@ package interfaz;
 
 public class Reproductor extends Reproductor_simple {
 	
-	public UsuarioRegistrado _usuarioRegistrado;
+	
 
 	public void Anadir_a_fav() {
 		throw new UnsupportedOperationException();
