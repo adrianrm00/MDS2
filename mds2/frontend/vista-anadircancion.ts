@@ -27,7 +27,7 @@ export class VistaAnadircancion extends LitElement {
    <vaadin-vertical-layout theme="spacing" style="flex-direction: row; width: 100%;" id="container_interprete">
     <label style="margin-right: var(--lumo-space-xl); flex-grow: 1; flex-shrink: 0; width: 16%;" id="label_interprete">Intérprete:</label>
     <vaadin-vertical-layout theme="spacing" style="margin-right: var(--lumo-space-m); width: 100%; flex-grow: 0; flex-shrink: 1; align-items: stretch;" id="container_linea_interpretes">
-     <vaadin-horizontal-layout theme="spacing" style="flex-direction: row;" id="container_linea_interprete">
+     <vaadin-horizontal-layout theme="" style="flex-direction: row; flex-shrink: 0; flex-grow: 0;" id="container_linea_interprete">
       <vaadin-text-field style="flex-grow: 1; flex-shrink: 0;" id="tf_interprete"></vaadin-text-field>
       <vaadin-button id="boton_eliminar_interprete">
         X 
@@ -35,7 +35,7 @@ export class VistaAnadircancion extends LitElement {
      </vaadin-horizontal-layout>
     </vaadin-vertical-layout>
     <vaadin-button id="boton_anadir_interprete">
-     +
+      + 
     </vaadin-button>
    </vaadin-vertical-layout>
    <vaadin-vertical-layout theme="spacing" style="flex-direction: row; width: 100%;" id="container_compositor">

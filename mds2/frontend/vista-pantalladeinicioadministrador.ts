@@ -1,7 +1,7 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
+import '@vaadin/vaadin-ordered-layout/src/vaadin-horizontal-layout.js';
 
 @customElement('vista-pantalladeinicioadministrador')
 export class VistaPantalladeinicioadministrador extends LitElement {
@@ -17,7 +17,6 @@ export class VistaPantalladeinicioadministrador extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_principal">
- <vaadin-horizontal-layout style="width: 100%; height: 10%; background-color: #EAEDED;" id="container_cabecera"></vaadin-horizontal-layout>
  <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 100%; align-items: center; align-self: center; justify-content: center;" id="container_principal_opciones">
   <vaadin-horizontal-layout theme="spacing" style="height: 60%; width: 50%; align-self: center; justify-content: center; flex-direction: row; align-items: center; background-color: #EAEDED; margin-bottom: 10%;" id="container_opciones">
    <vaadin-vertical-layout theme="spacing" style="height: 100%; align-items: center; justify-content: center;" id="container_opciones_izq">

@@ -10,6 +10,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
+import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +67,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	Cabecera_de_inicio i = new Cabecera_de_inicio();
+    	Cabecera_administrador i = new Cabecera_administrador();
     	add(i);
     	
     	

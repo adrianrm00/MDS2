@@ -32,7 +32,7 @@ export class VistaCabeceraadministrador extends LitElement {
    </vaadin-button>
   </vaadin-horizontal-layout>
  </vaadin-horizontal-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_contenido"></vaadin-vertical-layout>
+ <vaadin-vertical-layout style="width: 100%; height: 100%; flex-shrink: 0;" id="container_contenido"></vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
   }

@@ -20,8 +20,6 @@ public class VistaPantalladeinicioadministrador extends LitTemplate {
 
     @Id("container_principal")
 	private Element container_principal;
-	@Id("container_cabecera")
-	private HorizontalLayout container_cabecera;
 	@Id("container_principal_opciones")
 	private HorizontalLayout container_principal_opciones;
 	@Id("container_opciones")
@@ -59,16 +57,6 @@ public class VistaPantalladeinicioadministrador extends LitTemplate {
 
 	public void setContainer_principal(Element container_principal) {
 		this.container_principal = container_principal;
-	}
-
-
-	public HorizontalLayout getContainer_cabecera() {
-		return container_cabecera;
-	}
-
-
-	public void setContainer_cabecera(HorizontalLayout container_cabecera) {
-		this.container_cabecera = container_cabecera;
 	}
 
 
