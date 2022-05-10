@@ -22,6 +22,8 @@ import com.vaadin.flow.component.html.H3;
 @JsModule("./vista-cabeceradeinicio.ts")
 public class VistaCabeceradeinicio extends LitTemplate {
 
+	@Id("container_principal")
+	private Element container_principal;
     @Id("container_cabecera")
 	private Element container_cabecera;
 	@Id("container_spotyual")
@@ -74,6 +76,15 @@ public class VistaCabeceradeinicio extends LitTemplate {
 	private HorizontalLayout cancion_prueba_5;
 	@Id("container_footer")
 	private Element container_footer;
+	
+
+	public Element getContainer_principal() {
+		return container_principal;
+	}
+
+	public void setContainer_principal(Element container_principal) {
+		this.container_principal = container_principal;
+	}
 
 	public Element getContainer_cabecera() {
 		return container_cabecera;
