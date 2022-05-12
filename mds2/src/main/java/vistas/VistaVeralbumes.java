@@ -25,8 +25,21 @@ public class VistaVeralbumes extends LitTemplate {
 	private Label titulo;
 	@Id("container_buscador")
 	private Element container_buscador;
+	@Id("vaadinVerticalLayout")
+	private Element vaadinVerticalLayout;
 
 	
+	
+	public Element getVaadinVerticalLayout() {
+		return vaadinVerticalLayout;
+	}
+
+
+	public void setVaadinVerticalLayout(Element vaadinVerticalLayout) {
+		this.vaadinVerticalLayout = vaadinVerticalLayout;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

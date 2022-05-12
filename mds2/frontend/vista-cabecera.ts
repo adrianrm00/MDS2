@@ -24,10 +24,7 @@ export class VistaCabecera extends LitElement {
     <label style="width: 100%; font-size:32px; font-weight:bold;" id="label_spotyual">SpotyUAL</label>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout style="width: 200%; height: 100%; flex-direction: row; align-self: center;" id="container_buscador_biblioteca">
-   <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_buscador"></vaadin-vertical-layout>
-   <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_biblioteca"></vaadin-vertical-layout>
-  </vaadin-vertical-layout>
+  <vaadin-vertical-layout style="width: 200%; height: 100%; flex-direction: row; align-self: center;" id="container_buscador_biblioteca"></vaadin-vertical-layout>
   <vaadin-vertical-layout style="width: 150%; height: 100%;" id="container_opciones_usuario"></vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_contenido_total" style="width: 100%; height: 600%; flex-direction: row;">

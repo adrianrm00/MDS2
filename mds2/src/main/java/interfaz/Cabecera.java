@@ -26,7 +26,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Buscar buscador = new Buscar();
-				getContainer_buscador().as(VerticalLayout.class).add(buscador);
+				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(buscador);
 				
 				//hacer que aparezca en contenido la ventana buscador
 				//getContainer_contenido().as(VerticalLayout.class).add(null);
@@ -39,7 +39,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Tu_biblioteca biblio = new Tu_biblioteca();
-				getContainer_buscador().as(VerticalLayout.class).add(biblio);
+				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(biblio);
 				
 				
 				biblio.getBoton_albumes().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {

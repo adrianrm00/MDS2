@@ -17,46 +17,80 @@ import com.vaadin.flow.component.html.Label;
 @JsModule("./vista-verlistas.ts")
 public class VistaVerlistas extends LitTemplate {
 
-    @Id("container_principal")
+   
+
+	@Id("container_principal")
 	private Element container_principal;
-	@Id("container_titulo")
-	private Element container_titulo;
-	@Id("titulo")
-	private Label titulo;
+	@Id("container_cabecera")
+	private Element container_cabecera;
+	@Id("container_texto")
+	private Label container_texto;
 	@Id("container_buscador")
 	private Element container_buscador;
+	@Id("container_listas")
+	private Element container_listas;
 
+	
+	
 	public Element getContainer_principal() {
 		return container_principal;
 	}
+
+
 
 	public void setContainer_principal(Element container_principal) {
 		this.container_principal = container_principal;
 	}
 
-	public Element getContainer_titulo() {
-		return container_titulo;
+
+
+	public Element getContainer_cabecera() {
+		return container_cabecera;
 	}
 
-	public void setContainer_titulo(Element container_titulo) {
-		this.container_titulo = container_titulo;
+
+
+	public void setContainer_cabecera(Element container_cabecera) {
+		this.container_cabecera = container_cabecera;
 	}
 
-	public Label getTitulo() {
-		return titulo;
+
+
+	public Label getContainer_texto() {
+		return container_texto;
 	}
 
-	public void setTitulo(Label titulo) {
-		this.titulo = titulo;
+
+
+	public void setContainer_texto(Label container_texto) {
+		this.container_texto = container_texto;
 	}
+
+
 
 	public Element getContainer_buscador() {
 		return container_buscador;
 	}
 
+
+
 	public void setContainer_buscador(Element container_buscador) {
 		this.container_buscador = container_buscador;
 	}
+
+
+
+	public Element getContainer_listas() {
+		return container_listas;
+	}
+
+
+
+	public void setContainer_listas(Element container_listas) {
+		this.container_listas = container_listas;
+	}
+
+
 
 	/**
      * Creates a new VistaVerlistas.

@@ -35,8 +35,6 @@ public class VistaCabecera extends LitTemplate {
 	private Label label_spotyual;
 	@Id("container_buscador_biblioteca")
 	private Element container_buscador_biblioteca;
-	@Id("container_buscador")
-	private Element container_buscador;
 	@Id("container_opciones_usuario")
 	private Element container_opciones_usuario;
 	@Id("container_contenido_total")
@@ -47,14 +45,20 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_contenido;
 	@Id("container_reproductor")
 	private Element container_reproductor;
-	@Id("container_biblioteca")
-	private Element container_biblioteca;
+
+
+
 	
-	
+
+
 
 	public Element getContainer_principal() {
 		return container_principal;
 	}
+
+
+
+
 
 
 
@@ -64,9 +68,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Element getContainer_cabecera() {
 		return container_cabecera;
 	}
+
+
+
+
 
 
 
@@ -76,9 +88,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Element getContainer_spotyual() {
 		return container_spotyual;
 	}
+
+
+
+
 
 
 
@@ -88,9 +108,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Element getContainer_img() {
 		return container_img;
 	}
+
+
+
+
 
 
 
@@ -100,9 +128,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Image getImg() {
 		return img;
 	}
+
+
+
+
 
 
 
@@ -112,9 +148,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Element getContainer_label() {
 		return container_label;
 	}
+
+
+
+
 
 
 
@@ -124,9 +168,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Label getLabel_spotyual() {
 		return label_spotyual;
 	}
+
+
+
+
 
 
 
@@ -136,9 +188,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public Element getContainer_buscador_biblioteca() {
 		return container_buscador_biblioteca;
 	}
+
+
+
+
 
 
 
@@ -148,27 +208,7 @@ public class VistaCabecera extends LitTemplate {
 
 
 
-	public Element getContainer_buscador() {
-		return container_buscador;
-	}
 
-
-
-	public void setContainer_buscador(Element container_buscador) {
-		this.container_buscador = container_buscador;
-	}
-
-
-
-	public Element getContainer_biblioteca() {
-		return container_biblioteca;
-	}
-
-
-
-	public void setContainer_biblioteca(Element container_biblioteca) {
-		this.container_biblioteca = container_biblioteca;
-	}
 
 
 
@@ -178,9 +218,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public void setContainer_opciones_usuario(Element container_opciones_usuario) {
 		this.container_opciones_usuario = container_opciones_usuario;
 	}
+
+
+
+
 
 
 
@@ -190,9 +238,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public void setContainer_contenido_total(Element container_contenido_total) {
 		this.container_contenido_total = container_contenido_total;
 	}
+
+
+
+
 
 
 
@@ -202,9 +258,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public void setContainer_menu_lateral(Element container_menu_lateral) {
 		this.container_menu_lateral = container_menu_lateral;
 	}
+
+
+
+
 
 
 
@@ -214,9 +278,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public void setContainer_contenido(Element container_contenido) {
 		this.container_contenido = container_contenido;
 	}
+
+
+
+
 
 
 
@@ -226,9 +298,17 @@ public class VistaCabecera extends LitTemplate {
 
 
 
+
+
+
+
 	public void setContainer_reproductor(Element container_reproductor) {
 		this.container_reproductor = container_reproductor;
 	}
+
+
+
+
 
 
 

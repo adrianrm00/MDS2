@@ -25,8 +25,21 @@ public class VistaVerartistas extends LitTemplate {
 	private Label titulo;
 	@Id("container_buscador")
 	private Element container_buscador;
+	@Id("container-buscador")
+	private Element containerBuscador;
 
 	
+	
+	public Element getContainerBuscador() {
+		return containerBuscador;
+	}
+
+
+	public void setContainerBuscador(Element containerBuscador) {
+		this.containerBuscador = containerBuscador;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}
