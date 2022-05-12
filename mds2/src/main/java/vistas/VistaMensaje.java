@@ -33,8 +33,20 @@ public class VistaMensaje extends LitTemplate {
 	private Element container_botones;
 	@Id("boton_leer")
 	private Button boton_leer;
+	@Id("boton_borrar")
+	private Button boton_borrar;
 
 	
+	public Button getBoton_borrar() {
+		return boton_borrar;
+	}
+
+
+	public void setBoton_borrar(Button boton_borrar) {
+		this.boton_borrar = boton_borrar;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

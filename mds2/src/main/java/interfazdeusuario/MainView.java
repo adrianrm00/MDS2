@@ -13,6 +13,8 @@ import com.vaadin.flow.server.PWA;
 import interfaz.Cabecera;
 import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;
+import interfaz.Contactanos;
+import interfaz.Cuenta;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -68,8 +70,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	Cabecera i = new Cabecera();
-    	add(i);
+    	add(new Cabecera());
     	
     	
     }

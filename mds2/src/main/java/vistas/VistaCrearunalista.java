@@ -62,6 +62,18 @@ public class VistaCrearunalista extends LitTemplate {
 	private Button boton_buscador;
 	@Id("img_lupa")
 	private Image img_lupa;
+	@Id("container_canciones")
+	private Element container_canciones;
+
+	
+	
+	public Element getContainer_canciones() {
+		return container_canciones;
+	}
+
+	public void setContainer_canciones(Element container_canciones) {
+		this.container_canciones = container_canciones;
+	}
 
 	public Element getContainer_principal() {
 		return container_principal;

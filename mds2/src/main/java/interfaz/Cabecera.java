@@ -75,6 +75,18 @@ public class Cabecera extends vistas.VistaCabecera {
 			}
 		});
 		
+		menu.getBoton_crear_lista().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+			
+			@Override
+			public void onComponentEvent(ClickEvent<Button> event) {
+				// TODO Auto-generated method stub
+				Crear_lista clista = new Crear_lista();
+				getContainer_contenido().as(VerticalLayout.class).add(clista);
+			}
+		});
+		
+		
+		
 	
 
 		

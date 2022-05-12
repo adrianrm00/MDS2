@@ -34,7 +34,7 @@ export class VistaCrearunalista extends LitElement {
   </vaadin-vertical-layout>
   <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="container_boton_editar_lista">
    <vaadin-button id="boton_editar_lista">
-    Editar lista
+     Editar lista 
    </vaadin-button>
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
@@ -50,6 +50,7 @@ export class VistaCrearunalista extends LitElement {
     </vaadin-button>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
+  <vaadin-vertical-layout id="container_canciones" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
