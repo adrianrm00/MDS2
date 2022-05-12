@@ -1,5 +1,5 @@
 package interfaz;
 
-public class Buscar extends Cabecera {
+public class Buscar extends vistas.VistaBuscador {
 
 }

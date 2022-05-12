@@ -10,6 +10,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
+import interfaz.Cabecera;
 import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;
 
@@ -67,7 +68,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	Cabecera_administrador i = new Cabecera_administrador();
+    	Cabecera i = new Cabecera();
     	add(i);
     	
     	
