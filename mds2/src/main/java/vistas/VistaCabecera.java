@@ -37,8 +37,6 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_buscador_biblioteca;
 	@Id("container_buscador")
 	private Element container_buscador;
-	@Id("container_biblioteca")
-	private Element container_biblioteca;
 	@Id("container_opciones_usuario")
 	private Element container_opciones_usuario;
 	@Id("container_contenido_total")
@@ -49,6 +47,8 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_contenido;
 	@Id("container_reproductor")
 	private Element container_reproductor;
+	@Id("container_biblioteca")
+	private Element container_biblioteca;
 	
 	
 
