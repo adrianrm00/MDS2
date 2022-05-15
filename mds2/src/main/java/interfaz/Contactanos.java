@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Contactanos extends vistas.VistaContactanos{
 
 	public Contactanos() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	

@@ -13,6 +13,7 @@ import Diagrama_de_clases.Apple;
 public class Registrarse extends vistas.VistaRegistrarse {
 	
 	public Registrarse() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
@@ -23,9 +24,11 @@ public class Registrarse extends vistas.VistaRegistrarse {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Cabecera_de_inicio init = new Cabecera_de_inicio();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(init);
 			}
 		});
+		
 		//Falta
 		this.getBoton_subir_foto().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
@@ -44,9 +47,11 @@ public class Registrarse extends vistas.VistaRegistrarse {
 				// TODO Auto-generated method stub
 				//Antes de irse al inicio tiene que saltar la confirmacion de la cuenta
 				Cabecera_de_inicio init = new Cabecera_de_inicio();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(init);
 			}
 		});
+		
 		//Falta
 		this.getBoton_google().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
@@ -56,6 +61,7 @@ public class Registrarse extends vistas.VistaRegistrarse {
 				
 			}
 		});
+		
 		//Falta
 		this.getBoton_facebook().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
@@ -65,6 +71,7 @@ public class Registrarse extends vistas.VistaRegistrarse {
 				
 			}
 		});
+		
 		//Falta
 		this.getBoton_apple().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			

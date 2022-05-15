@@ -9,12 +9,13 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Cabecera extends vistas.VistaCabecera {
 
 	public Cabecera() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
 	public void inicializar() {
 		
-		Menu_lateral menu= new Menu_lateral();
+		Menu_lateral menu = new Menu_lateral();
 		this.getContainer_menu_lateral().as(VerticalLayout.class).add(menu);
 		
 		Opciones_Usuario opc = new Opciones_Usuario();
@@ -26,6 +27,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Buscar buscador = new Buscar();
+				getContainer_buscador_biblioteca().as(VerticalLayout.class).removeAll();
 				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(buscador);
 				
 				//hacer que aparezca en contenido la ventana buscador
@@ -39,6 +41,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Tu_biblioteca biblio = new Tu_biblioteca();
+				getContainer_buscador_biblioteca().as(VerticalLayout.class).removeAll();
 				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(biblio);
 				
 				
@@ -48,6 +51,7 @@ public class Cabecera extends vistas.VistaCabecera {
 				public void onComponentEvent(ClickEvent<Button> event) {
 					// TODO Auto-generated method stub
 					Ver_albumes album = new Ver_albumes();
+					getContainer_contenido().as(VerticalLayout.class).removeAll();
 					getContainer_contenido().as(VerticalLayout.class).add(album);
 				}
 			});
@@ -58,6 +62,7 @@ public class Cabecera extends vistas.VistaCabecera {
 				public void onComponentEvent(ClickEvent<Button> event) {
 					// TODO Auto-generated method stub
 					Ver_Artistas artista = new Ver_Artistas();
+					getContainer_contenido().as(VerticalLayout.class).removeAll();
 					getContainer_contenido().as(VerticalLayout.class).add(artista);
 				}
 			});
@@ -68,6 +73,7 @@ public class Cabecera extends vistas.VistaCabecera {
 				public void onComponentEvent(ClickEvent<Button> event) {
 					// TODO Auto-generated method stub
 					Ver_Listas init = new Ver_Listas();
+					getContainer_contenido().as(VerticalLayout.class).removeAll();
 					getContainer_contenido().as(VerticalLayout.class).add(init);
 				}
 			});
@@ -81,6 +87,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Crear_lista clista = new Crear_lista();
+				getContainer_contenido().as(VerticalLayout.class).removeAll();
 				getContainer_contenido().as(VerticalLayout.class).add(clista);
 			}
 		});

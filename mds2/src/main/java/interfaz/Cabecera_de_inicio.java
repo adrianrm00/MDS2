@@ -13,16 +13,22 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 
 	
 	public Cabecera_de_inicio() {
+		
+		this.getStyle().set("width", "100%");
+		
 		inicializar();
 	}
 	
 	public void inicializar() {
+		
 		this.getBoton_asistencia().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				
+				Asistencia asist = new Asistencia();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
+				getContainer_principal().as(VerticalLayout.class).add(asist);
 			}
 		});
 		
@@ -31,8 +37,9 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				VistaRegistrarse i = new VistaRegistrarse();
-				getContainer_principal().as(VerticalLayout.class).add(i);
+				Registrarse reg = new Registrarse();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
+				getContainer_principal().as(VerticalLayout.class).add(reg);
 				
 			}		
 		});
@@ -42,8 +49,9 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				VistaIniciarsesion i = new VistaIniciarsesion();
-				getContainer_principal().as(VerticalLayout.class).add(i);
+				Iniciar_Sesion inSes = new Iniciar_Sesion();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
+				getContainer_principal().as(VerticalLayout.class).add(inSes);
 				
 			}
 			
@@ -54,8 +62,9 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				VistaRegistrarse i = new VistaRegistrarse();
-				getContainer_principal().as(VerticalLayout.class).add(i);
+				VistaRegistrarse reg = new VistaRegistrarse();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
+				getContainer_principal().as(VerticalLayout.class).add(reg);
 				
 			}
 			

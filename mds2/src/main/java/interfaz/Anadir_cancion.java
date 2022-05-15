@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Anadir_cancion extends vistas.VistaAnadircancion {
 
 	public Anadir_cancion() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 
@@ -110,6 +111,7 @@ public class Anadir_cancion extends vistas.VistaAnadircancion {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});
@@ -121,6 +123,7 @@ public class Anadir_cancion extends vistas.VistaAnadircancion {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});

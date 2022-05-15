@@ -19,46 +19,69 @@ import com.vaadin.flow.component.html.Image;
 @JsModule("./vista-buscadordecanciones.ts")
 public class VistaBuscadordecanciones extends LitTemplate {
 
-    @Id("container_principal")
+   
+
+
+
+
+	@Id("container_principal")
 	private Element container_principal;
 	@Id("tf_buscador")
 	private TextField tf_buscador;
-	@Id("vaadinButton")
-	private Button vaadinButton;
+	@Id("boton_buscar")
+	private Button boton_buscar;
 	@Id("img_lupa")
 	private Image img_lupa;
 
+	
+	
 	public Element getContainer_principal() {
 		return container_principal;
 	}
+
+
 
 	public void setContainer_principal(Element container_principal) {
 		this.container_principal = container_principal;
 	}
 
+
+
 	public TextField getTf_buscador() {
 		return tf_buscador;
 	}
+
+
 
 	public void setTf_buscador(TextField tf_buscador) {
 		this.tf_buscador = tf_buscador;
 	}
 
-	public Button getVaadinButton() {
-		return vaadinButton;
+
+
+	public Button getBoton_buscar() {
+		return boton_buscar;
 	}
 
-	public void setVaadinButton(Button vaadinButton) {
-		this.vaadinButton = vaadinButton;
+
+
+	public void setBoton_buscar(Button boton_buscar) {
+		this.boton_buscar = boton_buscar;
 	}
+
+
 
 	public Image getImg_lupa() {
 		return img_lupa;
 	}
 
+
+
 	public void setImg_lupa(Image img_lupa) {
 		this.img_lupa = img_lupa;
 	}
+
+
 
 	/**
      * Creates a new VistaBuscadordecanciones.

@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Cambiar_correo extends vistas.VistaCambiarcorreo{
 
 	public Cambiar_correo() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	

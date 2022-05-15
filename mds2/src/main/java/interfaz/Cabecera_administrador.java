@@ -10,6 +10,7 @@ import vistas.VistaCabeceradeinicio;
 public class Cabecera_administrador extends vistas.VistaCabeceraadministrador {
 	
 	public Cabecera_administrador() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
@@ -23,7 +24,8 @@ public class Cabecera_administrador extends vistas.VistaCabeceraadministrador {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				VistaCabeceradeinicio cabIn = new VistaCabeceradeinicio();
+				Cabecera_de_inicio cabIn = new Cabecera_de_inicio();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(cabIn);
 			}
 		});

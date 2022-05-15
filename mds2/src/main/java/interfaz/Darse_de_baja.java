@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Darse_de_baja extends vistas.VistaDarsedebaja {
 	
 	public Darse_de_baja() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	

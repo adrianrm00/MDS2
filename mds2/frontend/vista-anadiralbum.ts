@@ -25,6 +25,7 @@ export class VistaAnadiralbum extends LitElement {
  <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_contenido">
   <vaadin-vertical-layout style="width: 43%; height: 100%; align-self: center; background-color: #EAEDED;" id="container_contenido_con_fondo">
    <vaadin-vertical-layout style="width: 80%; height: 100%; align-self: center;" id="container_contenido_ajustado">
+    <vaadin-vertical-layout id="Container_Buscador_Album" style="align-self: center; width: 100%; height: 100%;"></vaadin-vertical-layout>
     <vaadin-text-field label="Nombre álbum:" placeholder="Placeholder" style="width: 100%;" id="tf_nombre_album"></vaadin-text-field>
     <vaadin-date-picker id="dp_fecha_lanzamiento" style="width: 100%;" label="Fecha lanzamiento:"></vaadin-date-picker>
     <vaadin-vertical-layout theme="spacing" style="width: 100%; align-items: center; flex-direction: row;" id="container_artista_asociado">

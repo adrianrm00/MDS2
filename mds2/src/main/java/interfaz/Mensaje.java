@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Mensaje extends vistas.VistaMensaje {
 
 	public Mensaje() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
@@ -28,6 +29,7 @@ public class Mensaje extends vistas.VistaMensaje {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Mensaje men = new Mensaje();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(men);
 			}
 		});

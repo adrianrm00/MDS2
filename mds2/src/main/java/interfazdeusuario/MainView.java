@@ -10,6 +10,7 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
+import interfaz.Administrador;
 import interfaz.Cabecera;
 import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;

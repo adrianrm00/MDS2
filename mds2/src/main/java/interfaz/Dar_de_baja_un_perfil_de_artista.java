@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Dar_de_baja_un_perfil_de_artista extends vistas.VistaDardebajaunperfildeartista {
 	
 	public Dar_de_baja_un_perfil_de_artista() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
@@ -19,6 +20,7 @@ public class Dar_de_baja_un_perfil_de_artista extends vistas.VistaDardebajaunper
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});
@@ -30,6 +32,7 @@ public class Dar_de_baja_un_perfil_de_artista extends vistas.VistaDardebajaunper
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});

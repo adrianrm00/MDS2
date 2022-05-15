@@ -18,16 +18,16 @@ export class VistaCabeceradeinicio extends LitElement {
     return html`
 <vaadin-vertical-layout id="container_principal" style="width: 100%; height: 100%;">
  <vaadin-vertical-layout style="width: 100%; height: 10%; flex-direction: row; background-color: #EAEDED;" id="container_cabecera">
-  <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 100%;" id="container_spotyual">
-   <vaadin-vertical-layout theme="spacing" id="container_img">
-    <img style="flex-grow: 0; flex-shrink: 1; height: 100%;" src="https://i1.wp.com/almeria.fape.es/wp-content/uploads/2018/03/logo_Ual_.jpg?resize=351%2C339" id="img">
+  <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 100%; flex-shrink: 1; flex-grow: 0;" id="container_spotyual">
+   <vaadin-vertical-layout theme="spacing" id="container_img" style="flex-shrink: 1; height: 100%; width: 10%;">
+    <img style="flex-grow: 0; flex-shrink: 1; height: 100%; width: 100%;" src="https://extension.ual.es/assets/logo-ual.png" id="img">
    </vaadin-vertical-layout>
-   <vaadin-vertical-layout style="flex-shrink: 0; justify-content: center; align-self: center;" id="container_p">
-    <p style="font-size: 30px; font-weight: bold; height: 100%; flex-grow: 0; flex-shrink: 0; align-self: center; width: 100%;" id="p_spotyual">SpotyUAL</p>
+   <vaadin-vertical-layout style="flex-shrink: 1; align-self: center; justify-content: center; height: 100%;" id="container_p">
+    <p style="font-size: 30px; font-weight: bold; flex-grow: 0; flex-shrink: 1; align-self: center; width: 100%; height: 100%;" id="p_spotyual">SpotyUAL</p>
    </vaadin-vertical-layout>
   </vaadin-horizontal-layout>
-  <vaadin-horizontal-layout theme="spacing-s" style="height: 100%; width: 50%; padding-left: var(--lumo-space-m); padding-right: var(--lumo-space-m); flex-grow: 0; flex-shrink: 0; flex-direction: row; margin-left: 30%;" id="container_botones">
-   <vaadin-button style="align-self: center; width: 100%; height: 50%; margin-left: var(--lumo-space-s);" id="boton_asistencia">
+  <vaadin-horizontal-layout theme="spacing-s" style="height: 100%; width: 50%; flex-grow: 0; flex-shrink: 0; flex-direction: row; align-self: center;" id="container_botones">
+   <vaadin-button style="align-self: center; width: 100%; height: 50%;" id="boton_asistencia">
      Asistencia 
    </vaadin-button>
    <vaadin-button style="align-self: center; width: 100%; height: 50%;" id="boton_registrarse_cabecera">
@@ -51,7 +51,7 @@ export class VistaCabeceradeinicio extends LitElement {
  </vaadin-vertical-layout>
  <vaadin-vertical-layout style="width: 100%; height: 50%;" id="container_canciones_prueba">
   <vaadin-vertical-layout style="height: 30%; width: 100%;" id="container_titulo_canciones_prueba">
-   <h3 style="flex-grow: 0; flex-shrink: 0; align-self: center; margin-top: 6%;" id="h3_canciones_prueba">Aquí tienes unas canciones de prueba</h3>
+   <h3 style="flex-grow: 0; flex-shrink: 0; align-self: center; margin-top: 2.5%;" id="h3_canciones_prueba">Aquí tienes unas canciones de prueba</h3>
   </vaadin-vertical-layout>
   <vaadin-vertical-layout style="width: 100%; height: 70%; flex-direction: row;" id="container_canciones">
    <vaadin-horizontal-layout theme="spacing" style="width: 100%; height: 100%; padding: var(--lumo-space-xl);" id="cancion_prueba_1"></vaadin-horizontal-layout>

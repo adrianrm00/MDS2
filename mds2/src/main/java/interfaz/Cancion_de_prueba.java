@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Cancion_de_prueba extends vistas.VistaCanciondeprueba{
 
 	public Cancion_de_prueba() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	

@@ -85,7 +85,23 @@ public class VistaAnadiralbum extends LitTemplate {
 	private Button boton_cancelar;
 	@Id("boton_dar_de_alta")
 	private Button boton_dar_de_alta;
+	@Id("Container_Buscador_Album")
+	private Element container_Buscador_Album;
 	
+	
+	
+	public Element getContainer_Buscador_Album() {
+		return container_Buscador_Album;
+	}
+
+
+
+	public void setContainer_Buscador_Album(Element container_Buscador_Album) {
+		this.container_Buscador_Album = container_Buscador_Album;
+	}
+
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

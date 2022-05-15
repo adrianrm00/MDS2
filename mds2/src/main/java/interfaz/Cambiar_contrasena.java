@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Cambiar_contrasena extends vistas.VistaCambiarcontrasena{
 
 	public Cambiar_contrasena() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	

@@ -8,6 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Modificar_estilos_de_musica extends vistas.VistaModificarestilosdemusica {
 	
 	public Modificar_estilos_de_musica() {
+		this.getStyle().set("width", "100%");
 		inicializar();
 	}
 	
@@ -40,6 +41,7 @@ public class Modificar_estilos_de_musica extends vistas.VistaModificarestilosdem
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});
@@ -51,6 +53,7 @@ public class Modificar_estilos_de_musica extends vistas.VistaModificarestilosdem
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Administrador admin = new Administrador();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}
 		});
