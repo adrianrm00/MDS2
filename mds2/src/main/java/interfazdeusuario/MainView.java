@@ -16,6 +16,8 @@ import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;
 import interfaz.Contactanos;
 import interfaz.Cuenta;
+import interfaz.Notificaciones;
+import interfaz.Otras_listas;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -71,7 +73,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	add(new Cabecera());
+    	add(new Otras_listas());
     	
     	
     }

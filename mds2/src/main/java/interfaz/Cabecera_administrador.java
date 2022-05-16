@@ -24,7 +24,7 @@ public class Cabecera_administrador extends vistas.VistaCabeceraadministrador {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				Cabecera_de_inicio cabIn = new Cabecera_de_inicio();
+				Cerrar_Sesion cabIn = new Cerrar_Sesion();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(cabIn);
 			}

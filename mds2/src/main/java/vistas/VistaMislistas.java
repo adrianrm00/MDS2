@@ -43,8 +43,21 @@ public class VistaMislistas extends LitTemplate {
 	private Label texto_num_listas;
 	@Id("container_canciones")
 	private Element container_canciones;
+	@Id("Container_botones_lista")
+	private Element container_botones_lista;
 
 	
+	
+	public Element getContainer_botones_lista() {
+		return container_botones_lista;
+	}
+
+
+	public void setContainer_botones_lista(Element container_botones_lista) {
+		this.container_botones_lista = container_botones_lista;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

@@ -8,6 +8,7 @@ import com.vaadin.flow.component.template.Id;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.button.Button;
 
 /**
  * A Designer generated component for the vista-otraslistas template.
@@ -41,15 +42,53 @@ public class VistaOtraslistas extends LitTemplate {
 	private Element container_num_lista;
 	@Id("titulo_num_lista")
 	private Label titulo_num_lista;
-	@Id("container_botones_lista")
-	private Element container_botones_lista;
 	@Id("container_canciones_listas")
 	private Element container_canciones_listas;
-
+	@Id("boton_creador_lista")
+	private Button boton_creador_lista;
+	@Id("container_botones_lista")
+	private Element container_botones_lista;
+	@Id("container_boton_añadir_a_mislistas")
+	private Element container_boton_añadir_a_mislistas;
+	@Id("container_boton_compartir")
+	private Element container_boton_compartir;
+	@Id("boton_compartir")
+	private Button boton_compartir;
+	@Id("Container_Boton_Reproducir")
+	private Element container_Boton_Reproducir;
+	@Id("Boton_Reproducri")
+	private Button boton_Reproducri;
 	
+	
+	
+	public Element getContainer_Boton_Reproducir() {
+		return container_Boton_Reproducir;
+	}
+
+
+
+	public void setContainer_Boton_Reproducir(Element container_Boton_Reproducir) {
+		this.container_Boton_Reproducir = container_Boton_Reproducir;
+	}
+
+
+
+	public Button getBoton_Reproducri() {
+		return boton_Reproducri;
+	}
+
+
+
+	public void setBoton_Reproducri(Button boton_Reproducri) {
+		this.boton_Reproducri = boton_Reproducri;
+	}
+
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}
+
 
 
 	public void setContainer_principal(Element container_principal) {
@@ -57,9 +96,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_informacion_lista() {
 		return container_informacion_lista;
 	}
+
 
 
 	public void setContainer_informacion_lista(Element container_informacion_lista) {
@@ -67,9 +108,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_imagen() {
 		return container_imagen;
 	}
+
 
 
 	public void setContainer_imagen(Element container_imagen) {
@@ -77,9 +120,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Image getImg() {
 		return img;
 	}
+
 
 
 	public void setImg(Image img) {
@@ -87,9 +132,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_informacion() {
 		return container_informacion;
 	}
+
 
 
 	public void setContainer_informacion(Element container_informacion) {
@@ -97,9 +144,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_nombre_lista() {
 		return container_nombre_lista;
 	}
+
 
 
 	public void setContainer_nombre_lista(Element container_nombre_lista) {
@@ -107,9 +156,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public TextField getTf_nombre_lista() {
 		return tf_nombre_lista;
 	}
+
 
 
 	public void setTf_nombre_lista(TextField tf_nombre_lista) {
@@ -117,9 +168,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_creada_por() {
 		return container_creada_por;
 	}
+
 
 
 	public void setContainer_creada_por(Element container_creada_por) {
@@ -127,9 +180,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Label getTitulo_creada_por() {
 		return titulo_creada_por;
 	}
+
 
 
 	public void setTitulo_creada_por(Label titulo_creada_por) {
@@ -137,9 +192,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_num_lista() {
 		return container_num_lista;
 	}
+
 
 
 	public void setContainer_num_lista(Element container_num_lista) {
@@ -147,9 +204,11 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
 	public Label getTitulo_num_lista() {
 		return titulo_num_lista;
 	}
+
 
 
 	public void setTitulo_num_lista(Label titulo_num_lista) {
@@ -157,9 +216,35 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
+
+	public Element getContainer_canciones_listas() {
+		return container_canciones_listas;
+	}
+
+
+
+	public void setContainer_canciones_listas(Element container_canciones_listas) {
+		this.container_canciones_listas = container_canciones_listas;
+	}
+
+
+
+	public Button getBoton_creador_lista() {
+		return boton_creador_lista;
+	}
+
+
+
+	public void setBoton_creador_lista(Button boton_creador_lista) {
+		this.boton_creador_lista = boton_creador_lista;
+	}
+
+
+
 	public Element getContainer_botones_lista() {
 		return container_botones_lista;
 	}
+
 
 
 	public void setContainer_botones_lista(Element container_botones_lista) {
@@ -167,14 +252,41 @@ public class VistaOtraslistas extends LitTemplate {
 	}
 
 
-	public Element getContainer_canciones_listas() {
-		return container_canciones_listas;
+
+	public Element getContainer_boton_añadir_a_mislistas() {
+		return container_boton_añadir_a_mislistas;
 	}
 
 
-	public void setContainer_canciones_listas(Element container_canciones_listas) {
-		this.container_canciones_listas = container_canciones_listas;
+
+	public void setContainer_boton_añadir_a_mislistas(Element container_boton_añadir_a_mislistas) {
+		this.container_boton_añadir_a_mislistas = container_boton_añadir_a_mislistas;
 	}
+
+
+
+	public Element getContainer_boton_compartir() {
+		return container_boton_compartir;
+	}
+
+
+
+	public void setContainer_boton_compartir(Element container_boton_compartir) {
+		this.container_boton_compartir = container_boton_compartir;
+	}
+
+	
+
+	public Button getBoton_compartir() {
+		return boton_compartir;
+	}
+
+
+
+	public void setBoton_compartir(Button boton_compartir) {
+		this.boton_compartir = boton_compartir;
+	}
+
 
 
 	/**

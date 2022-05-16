@@ -29,6 +29,7 @@ public class Cuenta extends vistas.VistaCuenta{
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Cambiar_correo ccorr = new Cambiar_correo();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(ccorr);
 			}
 		});
@@ -39,6 +40,7 @@ public class Cuenta extends vistas.VistaCuenta{
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Cambiar_contrasena ccont = new Cambiar_contrasena();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(ccont);
 				
 			}
@@ -50,6 +52,7 @@ public class Cuenta extends vistas.VistaCuenta{
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Darse_de_baja dbaja = new Darse_de_baja();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(dbaja);
 				
 			}

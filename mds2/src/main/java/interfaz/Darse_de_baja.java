@@ -20,6 +20,7 @@ public class Darse_de_baja extends vistas.VistaDarsedebaja {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Cuenta cuent = new Cuenta();
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(cuent);
 			}
 		});
@@ -29,6 +30,7 @@ public class Darse_de_baja extends vistas.VistaDarsedebaja {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
+				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(new Cuenta());
 			}
 		});

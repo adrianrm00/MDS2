@@ -1,5 +1,6 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-otraslistas')
 export class VistaOtraslistas extends LitElement {
@@ -24,13 +25,28 @@ export class VistaOtraslistas extends LitElement {
     <vaadin-text-field label="Nobre de la Lista:" placeholder="Placeholder" style="width: 100%; height: 100%;" id="tf_nombre_lista"></vaadin-text-field>
    </vaadin-vertical-layout>
    <vaadin-vertical-layout style="width: 100%; height: 20%; justify-content: center;" id="container_creada_por">
-    <label style="width: 100%; font-weight: bold;" id="titulo_creada_por">Creada por : Nombre del usuario</label>
+    <label style="font-weight: bold;" id="titulo_creada_por">Creada por : Nombre del usuario</label>
+    <vaadin-button id="boton_creador_lista">
+      Perfil Usuario 
+    </vaadin-button>
    </vaadin-vertical-layout>
    <vaadin-vertical-layout style="width: 100%; height: 20%; justify-content: center;" id="container_num_lista">
     <label style="width: 100%;" id="titulo_num_lista">Lista: XXX/100</label>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="container_botones_lista"></vaadin-vertical-layout>
+  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center; flex-direction: row;" id="container_botones_lista">
+   <vaadin-vertical-layout id="container_boton_añadir_a_mislistas" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+   <vaadin-vertical-layout id="container_boton_compartir" style="width: 100%; height: 100%; justify-content: center; align-items: center;">
+    <vaadin-button id="boton_compartir">
+      Compartir 
+    </vaadin-button>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout id="Container_Boton_Reproducir" style="width: 100%; height: 100%; align-items: center; justify-content: center;">
+    <vaadin-button id="Boton_Reproducri">
+     Reproducir
+    </vaadin-button>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_canciones_listas" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
 </vaadin-vertical-layout>
