@@ -33,6 +33,7 @@ export class VistaMislistas extends LitElement {
   <vaadin-vertical-layout id="Container_botones_lista" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_canciones" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+ <vaadin-vertical-layout id="container_Editar_Lista" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
   }

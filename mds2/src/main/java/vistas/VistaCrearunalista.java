@@ -44,8 +44,6 @@ public class VistaCrearunalista extends LitTemplate {
 	private Label label_lista_numero;
 	@Id("container_boton_editar_lista")
 	private Element container_boton_editar_lista;
-	@Id("boton_editar_lista")
-	private Button boton_editar_lista;
 	@Id("container_contenido")
 	private Element container_contenido;
 	@Id("container_buscador")
@@ -171,13 +169,6 @@ public class VistaCrearunalista extends LitTemplate {
 		this.container_boton_editar_lista = container_boton_editar_lista;
 	}
 
-	public Button getBoton_editar_lista() {
-		return boton_editar_lista;
-	}
-
-	public void setBoton_editar_lista(Button boton_editar_lista) {
-		this.boton_editar_lista = boton_editar_lista;
-	}
 
 	public Element getContainer_contenido() {
 		return container_contenido;

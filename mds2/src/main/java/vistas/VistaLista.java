@@ -19,10 +19,6 @@ public class VistaLista extends LitTemplate {
 
     @Id("container_principal")
 	private Element container_principal;
-	@Id("container_editar")
-	private Element container_editar;
-	@Id("boton_editar")
-	private Button boton_editar;
 	@Id("container_eliminar")
 	private Element container_eliminar;
 	@Id("boton_eliminar")
@@ -44,26 +40,6 @@ public class VistaLista extends LitTemplate {
 
 	public void setContainer_principal(Element container_principal) {
 		this.container_principal = container_principal;
-	}
-
-
-	public Element getContainer_editar() {
-		return container_editar;
-	}
-
-
-	public void setContainer_editar(Element container_editar) {
-		this.container_editar = container_editar;
-	}
-
-
-	public Button getBoton_editar() {
-		return boton_editar;
-	}
-
-
-	public void setBoton_editar(Button boton_editar) {
-		this.boton_editar = boton_editar;
 	}
 
 

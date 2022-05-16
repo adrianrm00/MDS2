@@ -16,6 +16,7 @@ import interfaz.Cabecera_administrador;
 import interfaz.Cabecera_de_inicio;
 import interfaz.Contactanos;
 import interfaz.Cuenta;
+import interfaz.Mis_listas;
 import interfaz.Notificaciones;
 import interfaz.Otras_listas;
 
@@ -73,7 +74,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	add(new Otras_listas());
+    	add(new Cabecera_administrador());
     	
     	
     }

@@ -1,7 +1,7 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-text-field/src/vaadin-text-field.js';
-import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
 
 @customElement('vista-crearunalista')
 export class VistaCrearunalista extends LitElement {
@@ -32,11 +32,7 @@ export class VistaCrearunalista extends LitElement {
     <label style="width: 100%;" id="label_lista_numero">Lista: XXX/100</label>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="container_boton_editar_lista">
-   <vaadin-button id="boton_editar_lista">
-     Editar lista 
-   </vaadin-button>
-  </vaadin-vertical-layout>
+  <vaadin-vertical-layout style="width: 100%; height: 100%; align-items: center; justify-content: center;" id="container_boton_editar_lista"></vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout style="width: 100%; height: 190%; padding: var(--lumo-space-l);" id="container_contenido">
   <vaadin-vertical-layout style="width: 100%; height: 30%;" id="container_buscador">

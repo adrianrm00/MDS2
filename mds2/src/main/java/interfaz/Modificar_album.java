@@ -17,7 +17,9 @@ public class Modificar_album extends Anadir_album {
 		getContainer_Buscador_Album().as(VerticalLayout.class).removeAll();
 		getContainer_Buscador_Album().as(VerticalLayout.class).add(buscAlb);
 		
+		
 		getContainer_label_anadir_album().setText("Modificar álbum");
+		getContainer_label_anadir_album().getStyle().set("text-align", "center");
 		
 		this.getBoton_eliminar_artista().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
