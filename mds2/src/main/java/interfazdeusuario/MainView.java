@@ -74,7 +74,7 @@ public class MainView extends VerticalLayout {
 //        add(textField, button);
     	
     	
-    	add(new Cabecera_administrador());
+    	add(new Cabecera_de_inicio());
     	
     	
     }

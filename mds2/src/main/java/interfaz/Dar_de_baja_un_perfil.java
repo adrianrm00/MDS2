@@ -14,6 +14,9 @@ public class Dar_de_baja_un_perfil extends vistas.VistaDardebajaunperfil {
 	
 	public void inicializar() {
 		
+		Buscador_de_perfil bp = new Buscador_de_perfil();
+		getContainer_buscador_perfil().as(VerticalLayout.class).add(bp);
+		
 		this.getBoton_cancelar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
 			@Override

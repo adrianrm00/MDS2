@@ -37,7 +37,36 @@ public class Anadir_album extends vistas.VistaAnadiralbum {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-
+				
+				getBoton_cancelar().setVisible(false);
+				getBoton_dar_de_alta().setVisible(false);
+				getBoton_anadir_cancion().setVisible(false);
+				
+				Anadir_cancion_a_album anaCanAbl = new Anadir_cancion_a_album();
+				getContainer_anadir_cancion().as(VerticalLayout.class).add(anaCanAbl);
+				
+				anaCanAbl.getBoton_cancelar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						getBoton_cancelar().setVisible(true);
+						getBoton_dar_de_alta().setVisible(true);
+						getBoton_anadir_cancion().setVisible(true);
+					}
+				});
+				
+				anaCanAbl.getBoton_anadir().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						getBoton_cancelar().setVisible(true);
+						getBoton_dar_de_alta().setVisible(true);
+						getBoton_anadir_cancion().setVisible(true);
+					}
+				});
+				
 			}
 		});
 		//FALTA

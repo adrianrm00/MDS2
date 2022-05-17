@@ -14,6 +14,9 @@ public class Dar_de_baja_un_perfil_de_artista extends vistas.VistaDardebajaunper
 	
 	public void inicializar() {
 		
+		Buscador_de_artista ba = new Buscador_de_artista();
+		getContainer_buscador().as(VerticalLayout.class).add(ba);
+		
 		this.getBoton_cancelar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
 			@Override

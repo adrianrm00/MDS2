@@ -14,17 +14,7 @@ public class Asistencia extends vistas.VistaAsistencia {
 	
 	public void inicializar() {
 		
-		this.getBoton_cerrar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
-			
-			@Override
-			public void onComponentEvent(ClickEvent<Button> event) {
-				// TODO Auto-generated method stub
-				Cabecera_de_inicio cabIn = new Cabecera_de_inicio();
-				getContainer_principal().as(VerticalLayout.class).removeAll();
-				
-				getContainer_principal().as(VerticalLayout.class).add(cabIn);
-			}
-		});
+
 		
 	}
 

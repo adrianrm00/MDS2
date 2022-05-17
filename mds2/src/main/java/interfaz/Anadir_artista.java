@@ -1,9 +1,12 @@
 package interfaz;
 
 import com.vaadin.flow.component.ClickEvent;
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.dom.Element;
 
 public class Anadir_artista extends vistas.VistaAnadirartista {
 	
@@ -30,7 +33,20 @@ public class Anadir_artista extends vistas.VistaAnadirartista {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-
+				VerticalLayout vl = new VerticalLayout();
+				ComboBox<String> cb = new ComboBox<String>();
+				Button b = getBoton_eliminar_estilos_de_musica();
+				
+				vl.add(cb);
+				vl.add(b);
+				
+				vl.getStyle().set("margin-right", "var(--lumo-space-m)");
+				vl.getStyle().set("width", "100%");
+				vl.getStyle().set("flex-grow", "0");
+				vl.getStyle().set("flex-shrink", "1");
+				vl.getStyle().set("align-items", "stretch");
+							
+				getContainer_estilos_de_musica1().as(VerticalLayout.class).add(vl);
 			}
 		});
 		

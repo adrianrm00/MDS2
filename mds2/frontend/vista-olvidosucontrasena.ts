@@ -21,14 +21,14 @@ export class VistaOlvidosucontrasena extends LitElement {
   <label id="titulo" style="align-self: center; font-size: 32px; font-weight:bold;">¿Olvidó su contraseña?</label>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_text_field" style="height: 150%; width: 100%; justify-content: center; align-items: center;">
-  <vaadin-text-field label="Introduzca su correo electronico:" placeholder="Placeholder" id="tf_introduzca_su_correo" style="width: 50%;"></vaadin-text-field>
+  <vaadin-text-field label="Introduzca su correo electronico:" placeholder="Placeholder" id="tf_introduzca_su_correo" style="width: 100%;"></vaadin-text-field>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_botones" style="width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: center;">
   <vaadin-button id="boton_enviar" style="margin-right: var(--lumo-space-xl); width: 30%;">
-   Enviar
+    Enviar 
   </vaadin-button>
   <vaadin-button id="boton_cancelar" style="margin-left: var(--lumo-space-xl); width: 30%;">
-   Cancelar
+    Cancelar 
   </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>

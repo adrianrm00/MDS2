@@ -3,6 +3,7 @@ package interfaz;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 import Diagrama_de_clases.Apple;
@@ -28,44 +29,46 @@ public class Iniciar_Sesion extends vistas.VistaIniciarsesion {
 				getContainer_principal().as(VerticalLayout.class).add(init);
 			}
 		});
-		//Falta
-		this.getBoton_google().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
-			
-			@Override
-			public void onComponentEvent(ClickEvent<Button> event) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
-		//Falta
-		this.getBoton_facebook().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
-			
-			@Override
-			public void onComponentEvent(ClickEvent<Button> event) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
-		//Falta
-		this.getBoton_apple().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
-			
-			@Override
-			public void onComponentEvent(ClickEvent<Button> event) {
-				// TODO Auto-generated method stub
-				
-			}
-		});
+		
 		//Falta
 		this.getBoton_recordar_contraseña().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
+				
+				Dialog w = new Dialog();
 				Olvido_su_contrasena olvCon = new Olvido_su_contrasena();
-				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(olvCon);
+				w.add(olvCon);
+				w.open();
+				
+				olvCon.getBoton_cancelar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						Iniciar_Sesion inSes = new Iniciar_Sesion();
+						getContainer_principal().as(VerticalLayout.class).removeAll();
+						getContainer_principal().as(VerticalLayout.class).add(inSes);
+						w.close();
+					}
+				});
+				
+				olvCon.getBoton_enviar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						Iniciar_Sesion inSes = new Iniciar_Sesion();
+						getContainer_principal().as(VerticalLayout.class).removeAll();
+						getContainer_principal().as(VerticalLayout.class).add(inSes);
+						w.close();
+					}
+				});
+				
 			}
 		});
+		
 		//Falta si se equivoca al introducir la contraseña que sera con un if
 		this.getBoton_iniciar_sesion().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
