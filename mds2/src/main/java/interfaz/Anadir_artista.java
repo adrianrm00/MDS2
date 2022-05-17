@@ -49,7 +49,7 @@ public class Anadir_artista extends vistas.VistaAnadirartista {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				Cabecera_administrador admin = new Cabecera_administrador();
+				Administrador admin = new Administrador();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
 				getContainer_principal().as(VerticalLayout.class).add(admin);
 			}

@@ -44,6 +44,19 @@ public class Cabecera_administrador extends vistas.VistaCabeceraadministrador {
 					}
 				});
 				
+				cerrar.getBoton_no().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						//Falta hacer para saber si es admin o no
+						Cabecera_administrador cerrarNo = new Cabecera_administrador();
+						getContainer_principal().as(VerticalLayout.class).removeAll();
+						getContainer_principal().as(VerticalLayout.class).add(cerrarNo);
+						w.close();
+					}
+				});
+				
 				
 				
 				
