@@ -3,6 +3,7 @@ package interfaz;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
@@ -20,6 +21,61 @@ public class Cabecera extends vistas.VistaCabecera {
 		
 		Opciones_Usuario opc = new Opciones_Usuario();
 		this.getContainer_opciones_usuario().as(VerticalLayout.class).add(opc);
+		opc.getCombo_box_opciones().setItems("Cuenta", "Perfil", "Notificaciones", "Contactanos", "Cerrar Sesion");
+		opc.getCombo_box_opciones().addValueChangeListener(event -> {
+			if(event.getValue() == "Cuenta") {
+				//Notification.show("ASDFGHJKSDFGHJK");
+				Cuenta cuent = new Cuenta();
+				getContainer_contenido().as(VerticalLayout.class).removeAll();
+				getContainer_contenido().as(VerticalLayout.class).add(cuent);
+			}
+			else if(event.getValue() == "Perfil") {
+				Perfil perfil = new Perfil();
+				getContainer_contenido().as(VerticalLayout.class).removeAll();
+				getContainer_contenido().as(VerticalLayout.class).add(perfil);
+			}
+			else if(event.getValue() == "Notificaciones") {
+				Notificaciones noti= new Notificaciones();
+				getContainer_contenido().as(VerticalLayout.class).removeAll();
+				getContainer_contenido().as(VerticalLayout.class).add(noti);
+			}
+			else if(event.getValue() == "Contactanos") {
+				Contactanos cont = new Contactanos();
+				getContainer_contenido().as(VerticalLayout.class).removeAll();
+				getContainer_contenido().as(VerticalLayout.class).add(cont);
+			}else if(event.getValue() == "Cerrar Sesion") {
+				Dialog w = new Dialog();
+				Cerrar_Sesion cerrar = new Cerrar_Sesion();
+				w.add(cerrar);
+				w.open();
+				cerrar.getBoton_si().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						//Falta hacer para saber si es admin o no
+						Cabecera_de_inicio cerrarSi = new Cabecera_de_inicio();
+						getContainer_principal().as(VerticalLayout.class).removeAll();
+						getContainer_principal().as(VerticalLayout.class).add(cerrarSi);
+						w.close();
+					}
+				});
+				
+				cerrar.getBoton_no().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+					
+					@Override
+					public void onComponentEvent(ClickEvent<Button> event) {
+						// TODO Auto-generated method stub
+						//Falta hacer para saber si es admin o no
+						Cabecera cerrarNo = new Cabecera();
+						getContainer_principal().as(VerticalLayout.class).removeAll();
+						getContainer_principal().as(VerticalLayout.class).add(cerrarNo);
+						w.close();
+					}
+				});
+			}
+		});
+		
 		
 		menu.getBoton_buscar().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			

@@ -18,8 +18,10 @@ import com.vaadin.flow.component.html.Label;
 @JsModule("./vista-menulateral.ts")
 public class VistaMenulateral extends LitTemplate {
 
-    @Id("container_pricipal")
+	@Id("container_pricipal")
 	private Element container_pricipal;
+	@Id("container_botones")
+	private Element container_botones;
 	@Id("container_inicio")
 	private Element container_inicio;
 	@Id("boton_inicio")
@@ -44,11 +46,15 @@ public class VistaMenulateral extends LitTemplate {
 	private Element container_separador;
 	@Id("texto_separador")
 	private Label texto_separador;
+	@Id("container_listas")
+	private Element container_listas;
 	
 	
+
 	public Element getContainer_pricipal() {
 		return container_pricipal;
 	}
+
 
 
 	public void setContainer_pricipal(Element container_pricipal) {
@@ -56,9 +62,23 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
+	public Element getContainer_botones() {
+		return container_botones;
+	}
+
+
+
+	public void setContainer_botones(Element container_botones) {
+		this.container_botones = container_botones;
+	}
+
+
+
 	public Element getContainer_inicio() {
 		return container_inicio;
 	}
+
 
 
 	public void setContainer_inicio(Element container_inicio) {
@@ -66,9 +86,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Button getBoton_inicio() {
 		return boton_inicio;
 	}
+
 
 
 	public void setBoton_inicio(Button boton_inicio) {
@@ -76,9 +98,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_buscar() {
 		return container_buscar;
 	}
+
 
 
 	public void setContainer_buscar(Element container_buscar) {
@@ -86,9 +110,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Button getBoton_buscar() {
 		return boton_buscar;
 	}
+
 
 
 	public void setBoton_buscar(Button boton_buscar) {
@@ -96,9 +122,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_tu_biblioteca() {
 		return container_tu_biblioteca;
 	}
+
 
 
 	public void setContainer_tu_biblioteca(Element container_tu_biblioteca) {
@@ -106,9 +134,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Button getBoton_tu_biblioteca() {
 		return boton_tu_biblioteca;
 	}
+
 
 
 	public void setBoton_tu_biblioteca(Button boton_tu_biblioteca) {
@@ -116,9 +146,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_crear_lista() {
 		return container_crear_lista;
 	}
+
 
 
 	public void setContainer_crear_lista(Element container_crear_lista) {
@@ -126,9 +158,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Button getBoton_crear_lista() {
 		return boton_crear_lista;
 	}
+
 
 
 	public void setBoton_crear_lista(Button boton_crear_lista) {
@@ -136,9 +170,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_canciones_fav() {
 		return container_canciones_fav;
 	}
+
 
 
 	public void setContainer_canciones_fav(Element container_canciones_fav) {
@@ -146,9 +182,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Button getBoton_canciones_fav() {
 		return boton_canciones_fav;
 	}
+
 
 
 	public void setBoton_canciones_fav(Button boton_canciones_fav) {
@@ -156,9 +194,11 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Element getContainer_separador() {
 		return container_separador;
 	}
+
 
 
 	public void setContainer_separador(Element container_separador) {
@@ -166,14 +206,29 @@ public class VistaMenulateral extends LitTemplate {
 	}
 
 
+
 	public Label getTexto_separador() {
 		return texto_separador;
 	}
 
 
+
 	public void setTexto_separador(Label texto_separador) {
 		this.texto_separador = texto_separador;
 	}
+
+
+
+	public Element getContainer_listas() {
+		return container_listas;
+	}
+
+
+
+	public void setContainer_listas(Element container_listas) {
+		this.container_listas = container_listas;
+	}
+
 
 
 	/**
