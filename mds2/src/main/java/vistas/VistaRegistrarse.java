@@ -22,8 +22,6 @@ import com.vaadin.flow.component.checkbox.Checkbox;
 @JsModule("./vista-registrarse.ts")
 public class VistaRegistrarse extends LitTemplate {
 
-    @Id("container_principal")
-	private Element container_principal;
     @Id("boton_cancelar")
 	private Button boton_cancelar;
 	@Id("container_imagen")
@@ -82,9 +80,23 @@ public class VistaRegistrarse extends LitTemplate {
 	private Button boton_facebook;
 	@Id("boton_apple")
 	private Button boton_apple;
+	@Id("container_principal")
+	private Element container_principal;
+	@Id("container_centrado")
+	private Element container_centrado;
 	
+	
+	
+	public Element getContainer_centrado() {
+		return container_centrado;
+	}
 
-	
+
+	public void setContainer_centrado(Element container_centrado) {
+		this.container_centrado = container_centrado;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

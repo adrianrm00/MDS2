@@ -4,7 +4,10 @@ import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
+import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.TextField;
 
 import Diagrama_de_clases.Apple;
 import Diagrama_de_clases.Facebook;
@@ -31,7 +34,7 @@ public class Iniciar_Sesion extends vistas.VistaIniciarsesion {
 		});
 		
 		//Falta
-		this.getBoton_recordar_contraseña().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
+		this.getBoton_recordar_contrasena().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 			
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
@@ -75,9 +78,20 @@ public class Iniciar_Sesion extends vistas.VistaIniciarsesion {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
-				Cabecera reg = new Cabecera();
-				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(reg);
+				
+				if(getTf_correo_o_usuario().getValue().equals("user")) {
+					Cabecera reg = new Cabecera();
+					getContainer_principal().as(VerticalLayout.class).removeAll();
+					getContainer_principal().as(VerticalLayout.class).add(reg);
+				}
+				else if (getTf_correo_o_usuario().getValue().equals("admin")) {
+					Cabecera_administrador admin = new Cabecera_administrador();
+					getContainer_principal().as(VerticalLayout.class).removeAll();
+					getContainer_principal().as(VerticalLayout.class).add(admin);
+				}
+				else {
+					Notification.show("Usuario incorrecto");
+				}
 			}
 		});
 		

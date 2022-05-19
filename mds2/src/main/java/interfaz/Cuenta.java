@@ -8,7 +8,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class Cuenta extends vistas.VistaCuenta{
 
 	public Cuenta() {
-		this.getStyle().set("width", "100%");
+		this.getStyle().set("width", "80%");
 		inicializar();
 	}
 	

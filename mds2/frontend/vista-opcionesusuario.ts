@@ -15,12 +15,12 @@ export class VistaOpcionesusuario extends LitElement {
 
   render() {
     return html`
-<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row; align-items: center;" id="container_principal">
- <vaadin-vertical-layout style="width: 50%; height: 50%; align-self: center; justify-content: center;" id="container_imagen">
-  <img style="width: 100%; height: 100%;" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" id="img">
+<vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row; align-items: center; background-color: coral;" id="container_principal">
+ <vaadin-vertical-layout style="width: 20%; height: 100%; align-self: center; justify-content: center;" id="container_imagen">
+  <img style="width: 50%; height: 50%; align-self: flex-end;" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" id="img">
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 300%; height: 110%; flex-direction: row; align-self: center; align-items: center;" id="container_opciones">
-  <vaadin-combo-box style="width: 100%; align-self: center;" id="combo_box_opciones"></vaadin-combo-box>
+ <vaadin-vertical-layout style="width: 80%; height: 100%; flex-direction: row; align-self: center; align-items: center;" id="container_opciones">
+  <vaadin-combo-box style="width: 100%; align-self: center; height: 100%;" id="combo_box_opciones"></vaadin-combo-box>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;

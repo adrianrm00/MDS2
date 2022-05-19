@@ -61,6 +61,7 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 			}		
 		});
 		
+		
 		this.getBoton_iniciar_sesion().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 		
 			@Override
