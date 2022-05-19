@@ -7,6 +7,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class Tu_biblioteca extends vistas.VistaTubiblioteca {
 	
-	
+	public Tu_biblioteca() {
+		getStyle().set("width", "100%");
+	}
 	
 }

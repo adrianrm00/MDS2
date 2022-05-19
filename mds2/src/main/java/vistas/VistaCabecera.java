@@ -35,8 +35,6 @@ public class VistaCabecera extends LitTemplate {
 	private Label label_spotyual;
 	@Id("container_buscador_biblioteca")
 	private Element container_buscador_biblioteca;
-	@Id("container_opciones_usuario")
-	private Element container_opciones_usuario;
 	@Id("container_contenido_total")
 	private Element container_contenido_total;
 	@Id("container_menu_lateral")
@@ -45,6 +43,12 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_contenido;
 	@Id("container_reproductor")
 	private Element container_reproductor;
+	@Id("container_opc_usuario_centrado")
+	private Element container_opc_usuario_centrado;
+	@Id("container_opciones_usuario")
+	private Element container_opciones_usuario;
+	@Id("container_buscador_biblioteca_centrado")
+	private Element container_buscador_biblioteca_centrado;
 
 
 
@@ -206,6 +210,32 @@ public class VistaCabecera extends LitTemplate {
 		this.container_buscador_biblioteca = container_buscador_biblioteca;
 	}
 
+	
+
+	public Element getContainer_opc_usuario_centrado() {
+		return container_opc_usuario_centrado;
+	}
+
+
+	
+
+
+
+
+	public Element getContainer_buscador_biblioteca_centrado() {
+		return container_buscador_biblioteca_centrado;
+	}
+
+
+
+
+
+
+
+	public void setContainer_buscador_biblioteca_centrado(Element container_buscador_biblioteca_centrado) {
+		this.container_buscador_biblioteca_centrado = container_buscador_biblioteca_centrado;
+	}
+
 
 
 
@@ -224,6 +254,16 @@ public class VistaCabecera extends LitTemplate {
 
 	public void setContainer_opciones_usuario(Element container_opciones_usuario) {
 		this.container_opciones_usuario = container_opciones_usuario;
+	}
+
+
+
+
+
+
+
+	public void setContainer_opc_usuario_centrado(Element container_opc_usuario_centrado) {
+		this.container_opc_usuario_centrado = container_opc_usuario_centrado;
 	}
 
 

@@ -20,7 +20,7 @@ public class Cabecera extends vistas.VistaCabecera {
 		this.getContainer_menu_lateral().as(VerticalLayout.class).add(menu);
 		
 		Opciones_Usuario opc = new Opciones_Usuario();
-		this.getContainer_opciones_usuario().as(VerticalLayout.class).add(opc);
+		this.getContainer_opc_usuario_centrado().as(VerticalLayout.class).add(opc);
 		opc.getCombo_box_opciones().setItems("Cuenta", "Perfil", "Notificaciones", "Contactanos", "Cerrar Sesion");
 		opc.getCombo_box_opciones().addValueChangeListener(event -> {
 			if(event.getValue() == "Cuenta") {
@@ -84,8 +84,8 @@ public class Cabecera extends vistas.VistaCabecera {
 				// TODO Auto-generated method stub
 				Buscar buscador = new Buscar();
 				buscador.getStyle().set("width", "100%");
-				getContainer_buscador_biblioteca().as(VerticalLayout.class).removeAll();
-				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(buscador);
+				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).add(buscador);
 				
 				//hacer que aparezca en contenido la ventana buscador
 				//getContainer_contenido().as(VerticalLayout.class).add(null);
@@ -98,8 +98,8 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Tu_biblioteca biblio = new Tu_biblioteca();
-				getContainer_buscador_biblioteca().as(VerticalLayout.class).removeAll();
-				getContainer_buscador_biblioteca().as(VerticalLayout.class).add(biblio);
+				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).add(biblio);
 				
 				
 				biblio.getBoton_albumes().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {

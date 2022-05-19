@@ -19,7 +19,7 @@ export class VistaOpcionesusuario extends LitElement {
  <vaadin-vertical-layout style="width: 20%; height: 100%; align-self: center; justify-content: center;" id="container_imagen">
   <img style="width: 50%; height: 50%; align-self: flex-end;" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" id="img">
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 80%; height: 100%; flex-direction: row; align-self: center; align-items: center;" id="container_opciones">
+ <vaadin-vertical-layout style="width: 80%; flex-direction: row; align-self: center; align-items: center;" id="container_opciones">
   <vaadin-combo-box style="width: 100%; align-self: center; height: 100%;" id="combo_box_opciones"></vaadin-combo-box>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
