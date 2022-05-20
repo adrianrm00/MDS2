@@ -8,6 +8,7 @@ import com.vaadin.flow.component.template.Id;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.textfield.TextField;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 
 /**
  * A Designer generated component for the vista-cuenta template.
@@ -47,14 +48,29 @@ public class VistaCuenta extends LitTemplate {
 	private Element container_botones_cambiar_datos;
 	@Id("boton_cambiar_correo")
 	private Button boton_cambiar_correo;
-	@Id("boton_cambiar_contraseña")
-	private Button boton_cambiar_contraseña;
+	@Id("boton_cambiar_contrasena")
+	private Button boton_cambiar_contrasena;
 	@Id("container_boton_baja")
 	private Element container_boton_baja;
 	@Id("boton_darse_de_baja")
 	private Button boton_darse_de_baja;
+	@Id("container_scroll")
+	private Scroller container_scroll;
 
 	
+	
+	
+	
+	public Scroller getContainer_scroll() {
+		return container_scroll;
+	}
+
+
+	public void setContainer_scroll(Scroller container_scroll) {
+		this.container_scroll = container_scroll;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}
@@ -195,13 +211,13 @@ public class VistaCuenta extends LitTemplate {
 	}
 
 
-	public Button getBoton_cambiar_contraseña() {
-		return boton_cambiar_contraseña;
+	public Button getBoton_cambiar_contrasena() {
+		return boton_cambiar_contrasena;
 	}
 
 
-	public void setBoton_cambiar_contraseña(Button boton_cambiar_contraseña) {
-		this.boton_cambiar_contraseña = boton_cambiar_contraseña;
+	public void setBoton_cambiar_contraseña(Button boton_cambiar_contrasena) {
+		this.boton_cambiar_contrasena = boton_cambiar_contrasena;
 	}
 
 

@@ -25,11 +25,11 @@ export class VistaCambiarcontrasena extends LitElement {
   <vaadin-password-field label="Repita la nueva contraseña:" placeholder="Enter password" value="secret1" style="width: 50%;" has-value id="tf_repetir_contrasena"></vaadin-password-field>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout style="width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: center;" id="container_botones">
-  <vaadin-button style="margin: var(--lumo-space-l); width: 20%;" id="boton_guardar">
-    Guardar 
-  </vaadin-button>
   <vaadin-button style="margin: var(--lumo-space-l); width: 20%;" id="boton_cancelar">
     Cancelar 
+  </vaadin-button>
+  <vaadin-button style="margin: var(--lumo-space-l); width: 20%;" id="boton_guardar">
+    Guardar 
   </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>

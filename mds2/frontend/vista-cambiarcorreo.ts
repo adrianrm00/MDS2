@@ -25,11 +25,11 @@ export class VistaCambiarcorreo extends LitElement {
   <vaadin-text-field label="Repita el correo:" placeholder="Placeholder" id="tf_repita_correo" style="width: 50%;"></vaadin-text-field>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_botones" style="width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: center;">
-  <vaadin-button id="boton_guardar" style="margin: var(--lumo-space-l); width: 20%;">
-   Guardar
-  </vaadin-button>
   <vaadin-button id="boton_cancelar" style="margin: var(--lumo-space-l); width: 20%;">
-   Cancelar
+    Cancelar 
+  </vaadin-button>
+  <vaadin-button id="boton_guardar" style="margin: var(--lumo-space-l); width: 20%;">
+    Guardar 
   </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>

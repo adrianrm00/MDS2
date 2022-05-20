@@ -15,7 +15,7 @@ export class VistaCabecera extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: column;" id="container_principal">
- <vaadin-vertical-layout id="container_cabecera" style="flex-direction: row; width: 100%; height: 15%; background-color: red;">
+ <vaadin-vertical-layout id="container_cabecera" style="flex-direction: row; width: 100%; height: 15%; background-color: red; position: sticky;">
   <vaadin-vertical-layout style="width: 15%; height: 100%; flex-direction: row; background-color: coral; align-self: center; align-items: center;" id="container_spotyual">
    <vaadin-vertical-layout style="height: 100%; width: 20%;" id="container_img">
     <img style="width: 100%; height: 100%;" src="https://extension.ual.es/assets/logo-ual.png" id="img">

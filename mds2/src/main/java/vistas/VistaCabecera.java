@@ -55,13 +55,6 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_contenido_centrado;
 	@Id("container_reproductor_centrado")
 	private Element container_reproductor_centrado;
-
-
-
-	
-	
-	
-
 	public Element getContainer_reproductor_centrado() {
 		return container_reproductor_centrado;
 	}

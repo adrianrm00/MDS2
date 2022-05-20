@@ -9,7 +9,7 @@ public class Cambiar_correo extends vistas.VistaCambiarcorreo{
 
 	public Cambiar_correo() {
 		this.getStyle().set("width", "100%");
-		inicializar();
+		//inicializar();
 	}
 	
 	public void inicializar() {
