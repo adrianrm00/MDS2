@@ -1,6 +1,6 @@
 package interfaz;
 
-public class Reproductor_simple {
+public class Reproductor_simple extends vistas.VistaReproductordeprueba {
 	
 	public Cancion_de_prueba _cancion_de_Prueba;
 

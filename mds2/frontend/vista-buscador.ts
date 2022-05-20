@@ -15,11 +15,11 @@ export class VistaBuscador extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout theme="" style="width: 100%; height: 100%; flex-direction: row; align-items: center;" id="container_principal">
- <vaadin-vertical-layout style="width: 100%;" id="container_tf">
+ <vaadin-vertical-layout style="width: 90%; height: 100%; justify-content: center;" id="container_tf">
   <vaadin-text-field placeholder="Buscador de artistas, cancion, album, listas" style="width: 100%;" id="tf_buscador"></vaadin-text-field>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 100%; align-self: center; justify-content: center;" id="container_boton">
-  <vaadin-button id="boton_buscar">
+ <vaadin-vertical-layout style="width: 10%; height: 100%; align-self: center; justify-content: center;" id="container_boton">
+  <vaadin-button id="boton_buscar" style="width: 100%;">
     Buscar 
   </vaadin-button>
  </vaadin-vertical-layout>

@@ -32,10 +32,16 @@ export class VistaCabecera extends LitElement {
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_contenido_total" style="width: 100%; height: 75%; flex-direction: row;">
-  <vaadin-vertical-layout id="container_menu_lateral" style="width: 15%; height: 100%;"></vaadin-vertical-layout>
-  <vaadin-vertical-layout id="container_contenido" style="width: 80%; height: 100%;"></vaadin-vertical-layout>
+  <vaadin-vertical-layout id="container_menu_lateral" style="width: 15%; height: 100%; ;background-color: blue;">
+   <vaadin-vertical-layout id="container_menu_lateral_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+  <vaadin-vertical-layout id="container_contenido" style="width: 85%; height: 100%;">
+   <vaadin-vertical-layout id="container_contenido_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout id="container_reproductor" style="width: 100%; height: 10%;"></vaadin-vertical-layout>
+ <vaadin-vertical-layout id="container_reproductor" style="width: 100%; height: 10%; background-color:green;">
+  <vaadin-vertical-layout id="container_reproductor_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+ </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
   }

@@ -17,7 +17,7 @@ public class Cabecera extends vistas.VistaCabecera {
 	public void inicializar() {
 		
 		Menu_lateral menu = new Menu_lateral();
-		this.getContainer_menu_lateral().as(VerticalLayout.class).add(menu);
+		this.getContainer_menu_lateral_centrado().as(VerticalLayout.class).add(menu);
 		
 		Opciones_Usuario opc = new Opciones_Usuario();
 		this.getContainer_opc_usuario_centrado().as(VerticalLayout.class).add(opc);
@@ -26,23 +26,23 @@ public class Cabecera extends vistas.VistaCabecera {
 			if(event.getValue() == "Cuenta") {
 				//Notification.show("ASDFGHJKSDFGHJK");
 				Cuenta cuent = new Cuenta();
-				getContainer_contenido().as(VerticalLayout.class).removeAll();
-				getContainer_contenido().as(VerticalLayout.class).add(cuent);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalLayout.class).add(cuent);
 			}
 			else if(event.getValue() == "Perfil") {
 				Perfil perfil = new Perfil();
-				getContainer_contenido().as(VerticalLayout.class).removeAll();
-				getContainer_contenido().as(VerticalLayout.class).add(perfil);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalLayout.class).add(perfil);
 			}
 			else if(event.getValue() == "Notificaciones") {
 				Notificaciones noti= new Notificaciones();
-				getContainer_contenido().as(VerticalLayout.class).removeAll();
-				getContainer_contenido().as(VerticalLayout.class).add(noti);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalLayout.class).add(noti);
 			}
 			else if(event.getValue() == "Contactanos") {
 				Contactanos cont = new Contactanos();
-				getContainer_contenido().as(VerticalLayout.class).removeAll();
-				getContainer_contenido().as(VerticalLayout.class).add(cont);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalLayout.class).add(cont);
 			}else if(event.getValue() == "Cerrar Sesion") {
 				Dialog w = new Dialog();
 				Cerrar_Sesion cerrar = new Cerrar_Sesion();
@@ -83,7 +83,7 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Buscar buscador = new Buscar();
-				buscador.getStyle().set("width", "100%");
+				//buscador.getStyle().set("width", "100%");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).add(buscador);
 				
@@ -150,7 +150,8 @@ public class Cabecera extends vistas.VistaCabecera {
 			}
 		});
 		
-		
+		Reproductor repro = new Reproductor();
+		this.getContainer_reproductor_centrado().as(VerticalLayout.class).add(repro);
 		
 	
 

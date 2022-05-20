@@ -2,7 +2,9 @@ package interfaz;
 
 public class Reproductor extends Reproductor_simple {
 	
-	
+	public Reproductor() {
+		getStyle().set("width", "100%");
+	}
 
 	public void Anadir_a_fav() {
 		throw new UnsupportedOperationException();

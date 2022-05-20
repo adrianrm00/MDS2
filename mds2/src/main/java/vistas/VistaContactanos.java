@@ -45,8 +45,21 @@ public class VistaContactanos extends LitTemplate {
 	private Button boton_enviar;
 	@Id("boton_cancelar")
 	private Button boton_cancelar;
+	@Id("Container_motivos_centrado")
+	private Element container_motivos_centrado;
 
 	
+	
+	public Element getContainer_motivos_centrado() {
+		return container_motivos_centrado;
+	}
+
+
+	public void setContainer_motivos_centrado(Element container_motivos_centrado) {
+		this.container_motivos_centrado = container_motivos_centrado;
+	}
+
+
 	public Element getContainer_principal() {
 		return container_principal;
 	}

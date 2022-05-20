@@ -8,6 +8,7 @@ public class Perfil extends vistas.VistaPerfil {
 
 	public Perfil() {
 		inicializar();
+		getStyle().set("width", "100%");
 	}
 	
 	public void inicializar() {

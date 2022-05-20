@@ -49,22 +49,46 @@ public class VistaCabecera extends LitTemplate {
 	private Element container_opciones_usuario;
 	@Id("container_buscador_biblioteca_centrado")
 	private Element container_buscador_biblioteca_centrado;
+	@Id("container_menu_lateral_centrado")
+	private Element container_menu_lateral_centrado;
+	@Id("container_contenido_centrado")
+	private Element container_contenido_centrado;
+	@Id("container_reproductor_centrado")
+	private Element container_reproductor_centrado;
 
 
 
 	
+	
+	
 
+	public Element getContainer_reproductor_centrado() {
+		return container_reproductor_centrado;
+	}
 
+	public void setContainer_reproductor_centrado(Element container_reproductor_centrado) {
+		this.container_reproductor_centrado = container_reproductor_centrado;
+	}
+
+	public Element getContainer_contenido_centrado() {
+		return container_contenido_centrado;
+	}
+
+	public void setContainer_contenido_centrado(Element container_contenido_centrado) {
+		this.container_contenido_centrado = container_contenido_centrado;
+	}
+
+	public Element getContainer_menu_lateral_centrado() {
+		return container_menu_lateral_centrado;
+	}
+
+	public void setContainer_menu_lateral_centrado(Element container_menu_lateral_centrado) {
+		this.container_menu_lateral_centrado = container_menu_lateral_centrado;
+	}
 
 	public Element getContainer_principal() {
 		return container_principal;
 	}
-
-
-
-
-
-
 
 	public void setContainer_principal(Element container_principal) {
 		this.container_principal = container_principal;

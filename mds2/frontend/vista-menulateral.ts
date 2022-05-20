@@ -54,9 +54,11 @@ export class VistaMenulateral extends LitElement {
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout style="width: 100%; height: 5%; align-items: center;" id="container_separador">
-  <label style="width: 100%;" id="texto_separador">---------------------------------------------</label>
+  <label style="width: 100%;" id="texto_separador">---------------------------------------</label>
  </vaadin-vertical-layout>
- <vaadin-vertical-layout style="width: 100%; height: 70%;" id="container_listas"></vaadin-vertical-layout>
+ <vaadin-vertical-layout style="width: 100%; height: 70%;" id="container_listas">
+  <vaadin-vertical-layout id="container_listas_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
+ </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
   }
