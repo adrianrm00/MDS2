@@ -12,6 +12,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Image;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 
 /**
  * A Designer generated component for the vista-anadirartista template.
@@ -81,6 +82,17 @@ public class VistaAnadirartista extends LitTemplate {
 	private Button boton_cancelar;
 	@Id("boton_dar_de_alta")
 	private Button boton_dar_de_alta;
+	@Id("scroller")
+	private Scroller scroller;
+
+	
+	public Scroller getScroller() {
+		return scroller;
+	}
+
+	public void setScroller(Scroller scroller) {
+		this.scroller = scroller;
+	}
 
 	public Element getContainer_principal() {
 		return container_principal;

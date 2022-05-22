@@ -51,7 +51,7 @@ public class Cuenta extends vistas.VistaCuenta {
 						// Falta metodo para meterlo en la base de datos
 						Notification noti = new Notification();
 						noti.show("Correo cambiado correctamente");
-						//noti.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
+						noti.addThemeVariants(NotificationVariant.LUMO_SUCCESS);
 						w.close();
 					}
 				});

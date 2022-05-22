@@ -142,8 +142,8 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Crear_lista clista = new Crear_lista();
-				getContainer_contenido().as(VerticalLayout.class).removeAll();
-				getContainer_contenido().as(VerticalLayout.class).add(clista);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalLayout.class).add(clista);
 			}
 		});
 

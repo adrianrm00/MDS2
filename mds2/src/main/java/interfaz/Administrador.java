@@ -3,6 +3,7 @@ package interfaz;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 import basededatos.iAdministrador;
@@ -31,9 +32,13 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 			@Override
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
+				
+				
 				Modificar_artista modArt = new Modificar_artista();
+				Scroller a = new Scroller(modArt);
+				
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(modArt);
+				getContainer_principal().as(VerticalLayout.class).add(a);
 			}
 		});
 		
