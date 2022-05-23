@@ -9,7 +9,9 @@ public class Contactanos extends vistas.VistaContactanos{
 
 	public Contactanos() {
 		this.getStyle().set("width", "100%");
-		inicializar();
+		//getTfa_motivos().getStyle().set("height", "100%");
+		//getContainer_motivos_centrado().getStyle().set("width", "100%");
+		inicializar();			
 	}
 	
 	public void inicializar() {

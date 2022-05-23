@@ -31,6 +31,7 @@ public class Cuenta extends vistas.VistaCuenta {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Dialog w = new Dialog();
+				w.setWidth("50%");
 				Cambiar_correo ccorr = new Cambiar_correo();
 				w.add(ccorr);
 				w.open();
@@ -64,6 +65,7 @@ public class Cuenta extends vistas.VistaCuenta {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Dialog w = new Dialog();
+				w.setWidth("50%");
 				Cambiar_contrasena ccont = new Cambiar_contrasena();
 				w.add(ccont);
 				w.open();
@@ -97,6 +99,7 @@ public class Cuenta extends vistas.VistaCuenta {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Dialog w = new Dialog();
+				w.setWidth("50%");
 				Darse_de_baja darbaja = new Darse_de_baja();
 				w.add(darbaja);
 				w.open();
