@@ -5,6 +5,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class Cabecera extends vistas.VistaCabecera {
@@ -19,32 +20,57 @@ public class Cabecera extends vistas.VistaCabecera {
 		Menu_lateral menu = new Menu_lateral();
 		this.getContainer_menu_lateral_centrado().as(VerticalLayout.class).add(menu);
 
+		
+		Scroller scroll = this.getContainer_contenido_centrado();
+		VerticalLayout lay = new VerticalLayout();
+
+		
+		//getContainer_contenido().getStyle().set("display","block");
+		
 		Opciones_Usuario opc = new Opciones_Usuario();
 		this.getContainer_opc_usuario_centrado().as(VerticalLayout.class).add(opc);
 		opc.getCombo_box_opciones().setItems("Cuenta", "Perfil", "Notificaciones", "Contactanos", "Cerrar Sesion");
 		opc.getCombo_box_opciones().addValueChangeListener(event -> {
 			if (event.getValue() == "Cuenta") {
-				// Notification.show("ASDFGHJKSDFGHJK");
+				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
-				Cuenta cuent = new Cuenta();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(cuent);
+				
+				Cuenta cuent = new Cuenta();	
+				//lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(cuent);
+				scroll.setContent(lay);
+				
 			} else if (event.getValue() == "Perfil") {
+				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
+				
 				Perfil perfil = new Perfil();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(perfil);
+				lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(perfil);
+				scroll.setContent(lay);
+				
 			} else if (event.getValue() == "Notificaciones") {
+				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
+				
 				Notificaciones noti = new Notificaciones();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(noti);
+				lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(noti);
+				scroll.setContent(lay);
 			} else if (event.getValue() == "Contactanos") {
+				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				Contactanos cont = new Contactanos();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(cont);
+				
+				lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(cont);
+				scroll.setContent(lay);
 			} else if (event.getValue() == "Cerrar Sesion") {
+				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				Dialog w = new Dialog();
 				Cerrar_Sesion cerrar = new Cerrar_Sesion();
 				w.add(cerrar);
@@ -98,8 +124,10 @@ public class Cabecera extends vistas.VistaCabecera {
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).add(biblio);
 
 				Ver_Listas lista = new Ver_Listas();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(lista);
+				lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(lista);
+				scroll.setContent(lay);
 
 				biblio.getBotonListas().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 
@@ -107,8 +135,10 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_Listas init = new Ver_Listas();
-						getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-						getContainer_contenido_centrado().as(VerticalLayout.class).add(init);
+						lay.getStyle().set("width", "100%");
+						lay.removeAll();
+						lay.add(init);
+						scroll.setContent(lay);
 					}
 				});
 
@@ -118,8 +148,10 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_Artistas artista = new Ver_Artistas();
-						getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-						getContainer_contenido_centrado().as(VerticalLayout.class).add(artista);
+						lay.getStyle().set("width", "100%");
+						lay.removeAll();
+						lay.add(artista);
+						scroll.setContent(lay);
 					}
 				});
 
@@ -129,8 +161,10 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_albumes album = new Ver_albumes();
-						getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-						getContainer_contenido_centrado().as(VerticalLayout.class).add(album);
+						lay.getStyle().set("width", "100%");
+						lay.removeAll();
+						lay.add(album);
+						scroll.setContent(lay);
 					}
 				});
 			}
@@ -142,8 +176,10 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Crear_lista clista = new Crear_lista();
-				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
-				getContainer_contenido_centrado().as(VerticalLayout.class).add(clista);
+				//lay.getStyle().set("width", "100%");
+				lay.removeAll();
+				lay.add(clista);
+				scroll.setContent(lay);
 			}
 		});
 

@@ -30,6 +30,7 @@ public class Cabecera_de_inicio extends vistas.VistaCabeceradeinicio {
 				
 				Dialog w = new Dialog();
 				Asistencia asist = new Asistencia();
+				w.setWidth("50%");
 				w.add(asist);
 				w.open();
 				

@@ -16,7 +16,7 @@ export class VistaAsistencia extends LitElement {
   render() {
     return html`
 <vaadin-vertical-layout style="width: 100%; height: 100%;" id="container_principal">
- <h1 style="align-self: center;" id="h1_asistencia">---------------Asistencia---------------</h1>
+ <h1 style="align-self: center;" id="h1_asistencia">Asistencia</h1>
  <vaadin-vertical-layout theme="spacing" style="align-self: center;" id="container_contenido">
   <h3 id="h3_1">Texto ejemplo</h3>
   <h3 id="h3_2">Texto ejemplo</h3>

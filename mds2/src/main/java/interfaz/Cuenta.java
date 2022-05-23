@@ -6,6 +6,7 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
+import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 public class Cuenta extends vistas.VistaCuenta {
@@ -16,6 +17,7 @@ public class Cuenta extends vistas.VistaCuenta {
 	}
 
 	public void inicializar() {
+		
 		this.getBoton_cambiar_imagen().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 
 			@Override

@@ -1,6 +1,6 @@
 import { LitElement, html, css, customElement } from 'lit-element';
-import '@vaadin/vaadin-combo-box/src/vaadin-combo-box.js';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
+import '@vaadin/vaadin-combo-box/src/vaadin-combo-box.js';
 
 @customElement('vista-opcionesusuario')
 export class VistaOpcionesusuario extends LitElement {
@@ -20,7 +20,7 @@ export class VistaOpcionesusuario extends LitElement {
   <img style="width: 50%; height: 50%; align-self: flex-end;" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" id="img">
  </vaadin-vertical-layout>
  <vaadin-vertical-layout style="width: 80%; flex-direction: row; align-self: center; align-items: center;" id="container_opciones">
-  <vaadin-combo-box style="width: 100%; align-self: center; height: 100%;" id="combo_box_opciones"></vaadin-combo-box>
+  <vaadin-combo-box style="width: 100%; align-self: center; height: 100%;" id="combo_box_opciones" placeholder="NOMBRE USUARIO"></vaadin-combo-box>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;
