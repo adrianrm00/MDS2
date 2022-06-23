@@ -1,9 +1,16 @@
 package interfaz;
 
-public class Reproductor extends Reproductor_simple {
+import vistas.audio;
+
+public class Reproductor extends vistas.audio {
 	
 	public Reproductor() {
-		getStyle().set("width", "100%");
+		
+		inicializar();
+	}
+	
+	public void inicializar() {
+		//getStyle().set("width", "100%");
 	}
 
 	public void Anadir_a_fav() {

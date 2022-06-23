@@ -7,6 +7,7 @@ import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 import basededatos.iAdministrador;
+import interfazdeusuario.VerticalScrollLayout;
 
 public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 	
@@ -23,7 +24,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Anadir_artista anArt = new Anadir_artista();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(anArt);
+				getContainer_principal().as(VerticalScrollLayout.class).add(anArt);
 			}
 		});
 		
@@ -38,7 +39,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				Scroller a = new Scroller(modArt);
 				
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(a);
+				getContainer_principal().as(VerticalScrollLayout.class).add(a);
 			}
 		});
 		
@@ -49,7 +50,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Anadir_album anAlb = new Anadir_album();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(anAlb);
+				getContainer_principal().as(VerticalScrollLayout.class).add(anAlb);
 			}
 		});
 		
@@ -60,7 +61,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Modificar_album modAlb = new Modificar_album();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(modAlb);
+				getContainer_principal().as(VerticalScrollLayout.class).add(modAlb);
 			}
 		});
 		
@@ -71,7 +72,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Anadir_cancion anCan = new Anadir_cancion();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(anCan);
+				getContainer_principal().as(VerticalScrollLayout.class).add(anCan);
 			}
 		});
 		
@@ -82,7 +83,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Modificar_cancion modCan = new Modificar_cancion();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(modCan);
+				getContainer_principal().as(VerticalScrollLayout.class).add(modCan);
 			}
 		});
 		
@@ -93,7 +94,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Modificar_estilos_de_musica modEst = new Modificar_estilos_de_musica();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(modEst);
+				getContainer_principal().as(VerticalScrollLayout.class).add(modEst);
 			}
 		});
 		
@@ -104,7 +105,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Modificar_canciones_iniciales modCanInic = new Modificar_canciones_iniciales();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(modCanInic);
+				getContainer_principal().as(VerticalScrollLayout.class).add(modCanInic);
 			}
 		});
 		
@@ -115,7 +116,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Dar_de_baja_un_perfil bajPerf = new Dar_de_baja_un_perfil();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(bajPerf);
+				getContainer_principal().as(VerticalScrollLayout.class).add(bajPerf);
 			}
 		});
 		
@@ -126,7 +127,7 @@ public class Administrador extends vistas.VistaPantalladeinicioadministrador {
 				// TODO Auto-generated method stub
 				Dar_de_baja_un_perfil_de_artista bajPerfArt = new Dar_de_baja_un_perfil_de_artista();
 				getContainer_principal().as(VerticalLayout.class).removeAll();
-				getContainer_principal().as(VerticalLayout.class).add(bajPerfArt);
+				getContainer_principal().as(VerticalScrollLayout.class).add(bajPerfArt);
 			}
 		});
 	}

@@ -1,6 +1,5 @@
 import { LitElement, html, css, customElement } from 'lit-element';
 import '@vaadin/vaadin-ordered-layout/src/vaadin-vertical-layout.js';
-import '@vaadin/vaadin-ordered-layout/src/vaadin-scroller.js';
 
 @customElement('vista-cabecera')
 export class VistaCabecera extends LitElement {
@@ -36,8 +35,8 @@ export class VistaCabecera extends LitElement {
   <vaadin-vertical-layout id="container_menu_lateral" style="width: 15%; height: 100%; ;background-color: blue;">
    <vaadin-vertical-layout id="container_menu_lateral_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
   </vaadin-vertical-layout>
-  <vaadin-vertical-layout theme="spacing" id="container_contenido" style="width: 85%; height: 100%;">
-   <vaadin-scroller id="container_contenido_centrado" scroll-direction="vertical"></vaadin-scroller>
+  <vaadin-vertical-layout id="container_contenido" style="width: 85%; height: 100%;">
+   <vaadin-vertical-layout id="container_contenido_centrado" style="width: 100%; height: 100%;"></vaadin-vertical-layout>
   </vaadin-vertical-layout>
  </vaadin-vertical-layout>
  <vaadin-vertical-layout id="container_reproductor" style="width: 100%; height: 10%; background-color:green;">

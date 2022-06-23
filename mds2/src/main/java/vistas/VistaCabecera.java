@@ -51,12 +51,11 @@ public class VistaCabecera extends LitTemplate {
 	@Id("container_contenido")
 	private Element container_contenido;
 	@Id("container_contenido_centrado")
-	private Scroller container_contenido_centrado;
+	private Element container_contenido_centrado;
 	@Id("container_reproductor")
 	private Element container_reproductor;
 	@Id("container_reproductor_centrado")
 	private Element container_reproductor_centrado;
-	
 	
 	public Element getContainer_principal() {
 		return container_principal;
@@ -178,11 +177,11 @@ public class VistaCabecera extends LitTemplate {
 		this.container_contenido = container_contenido;
 	}
 
-	public Scroller getContainer_contenido_centrado() {
+	public Element getContainer_contenido_centrado() {
 		return container_contenido_centrado;
 	}
 
-	public void setContainer_contenido_centrado(Scroller container_contenido_centrado) {
+	public void setContainer_contenido_centrado(Element container_contenido_centrado) {
 		this.container_contenido_centrado = container_contenido_centrado;
 	}
 

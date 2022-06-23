@@ -1,12 +1,17 @@
 package interfaz;
 
+import java.awt.ScrollPane;
+
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.Scroller;
+import com.vaadin.flow.component.orderedlayout.Scroller.ScrollDirection;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+
+import interfazdeusuario.VerticalScrollLayout;
 
 public class Cabecera extends vistas.VistaCabecera {
 
@@ -21,12 +26,6 @@ public class Cabecera extends vistas.VistaCabecera {
 		this.getContainer_menu_lateral_centrado().as(VerticalLayout.class).add(menu);
 
 		
-		Scroller scroll = this.getContainer_contenido_centrado();
-		VerticalLayout lay = new VerticalLayout();
-
-		
-		//getContainer_contenido().getStyle().set("display","block");
-		
 		Opciones_Usuario opc = new Opciones_Usuario();
 		this.getContainer_opc_usuario_centrado().as(VerticalLayout.class).add(opc);
 		opc.getCombo_box_opciones().setItems("Cuenta", "Perfil", "Notificaciones", "Contactanos", "Cerrar Sesion");
@@ -35,40 +34,36 @@ public class Cabecera extends vistas.VistaCabecera {
 				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				
-				Cuenta cuent = new Cuenta();	
-				//lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(cuent);
-				scroll.setContent(lay);
+				Cuenta cuent = new Cuenta();
+				cuent.getStyle().set("width", "100%").set("height", "100%");
+				
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(cuent);
+				
+				//scro.setContent(lay);
 				
 			} else if (event.getValue() == "Perfil") {
 				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				
 				Perfil perfil = new Perfil();
-				lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(perfil);
-				scroll.setContent(lay);
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(perfil);
 				
 			} else if (event.getValue() == "Notificaciones") {
 				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				
 				Notificaciones noti = new Notificaciones();
-				lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(noti);
-				scroll.setContent(lay);
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(noti);
 			} else if (event.getValue() == "Contactanos") {
 				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).removeAll();
 				Contactanos cont = new Contactanos();
 				
-				lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(cont);
-				scroll.setContent(lay);
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(cont);
 			} else if (event.getValue() == "Cerrar Sesion") {
 				opc.getCombo_box_opciones().setValue("NOMBRE USUARIO");
 				Dialog w = new Dialog();
@@ -124,10 +119,8 @@ public class Cabecera extends vistas.VistaCabecera {
 				getContainer_buscador_biblioteca_centrado().as(VerticalLayout.class).add(biblio);
 
 				Ver_Listas lista = new Ver_Listas();
-				lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(lista);
-				scroll.setContent(lay);
+				getContainer_contenido_centrado().as(VerticalLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(lista);
 
 				biblio.getBotonListas().addClickListener(new ComponentEventListener<ClickEvent<Button>>() {
 
@@ -135,10 +128,8 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_Listas init = new Ver_Listas();
-						lay.getStyle().set("width", "100%");
-						lay.removeAll();
-						lay.add(init);
-						scroll.setContent(lay);
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(init);
 					}
 				});
 
@@ -148,10 +139,8 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_Artistas artista = new Ver_Artistas();
-						lay.getStyle().set("width", "100%");
-						lay.removeAll();
-						lay.add(artista);
-						scroll.setContent(lay);
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(artista);
 					}
 				});
 
@@ -161,10 +150,8 @@ public class Cabecera extends vistas.VistaCabecera {
 					public void onComponentEvent(ClickEvent<Button> event) {
 						// TODO Auto-generated method stub
 						Ver_albumes album = new Ver_albumes();
-						lay.getStyle().set("width", "100%");
-						lay.removeAll();
-						lay.add(album);
-						scroll.setContent(lay);
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+						getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(album);
 					}
 				});
 			}
@@ -176,15 +163,14 @@ public class Cabecera extends vistas.VistaCabecera {
 			public void onComponentEvent(ClickEvent<Button> event) {
 				// TODO Auto-generated method stub
 				Crear_lista clista = new Crear_lista();
-				//lay.getStyle().set("width", "100%");
-				lay.removeAll();
-				lay.add(clista);
-				scroll.setContent(lay);
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).removeAll();
+				getContainer_contenido_centrado().as(VerticalScrollLayout.class).add(clista);
 			}
 		});
 
 		Reproductor repro = new Reproductor();
 		this.getContainer_reproductor_centrado().as(VerticalLayout.class).add(repro);
+		
 
 		// Falta poner el reproductor y la vista que vamos a poner de inicio
 
